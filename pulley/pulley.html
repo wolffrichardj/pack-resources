@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Pulley Stem One-Pager</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        function HeroPulleyArt() {
+            return (
+                <svg viewBox="0 0 320 240" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Ceiling structure */}
+                    <rect x="80" y="20" width="160" height="16" rx="2" stroke="#0f2f57" strokeWidth="4" fill="#f8fafc" />
+                    <path d="M90 20 L100 36 M110 20 L120 36 M130 20 L140 36 M150 20 L160 36 M170 20 L180 36 M190 20 L200 36 M210 20 L220 36 M230 20 L240 36" stroke="#0f2f57" strokeWidth="2" opacity="0.3" />
+
+                    {/* Support Bracket */}
+                    <path d="M140 36 V70 H180 V36" stroke="#0f2f57" strokeWidth="4" fill="#dbe5f1" strokeLinejoin="round" />
+                    <circle cx="160" cy="70" r="8" stroke="#0f2f57" strokeWidth="3" fill="#f8fafc" />
+
+                    {/* Engineering Centerlines */}
+                    <line x1="160" y1="40" x2="160" y2="150" stroke="#0f2f57" strokeWidth="2" strokeDasharray="10 4 2 4" />
+                    <line x1="100" y1="90" x2="220" y2="90" stroke="#0f2f57" strokeWidth="2" strokeDasharray="10 4 2 4" />
+
+                    {/* Pulley Wheel & Hub */}
+                    <circle cx="160" cy="90" r="40" stroke="#0f2f57" strokeWidth="5" fill="#f8fafc" />
+                    <circle cx="160" cy="90" r="32" stroke="#0f2f57" strokeWidth="2" />
+                    <circle cx="160" cy="90" r="12" stroke="#0f2f57" strokeWidth="4" fill="#dbe5f1" />
+                    <circle cx="160" cy="90" r="4" fill="#0f2f57" />
+
+                    {/* Rope */}
+                    <path d="M120 90 V170" stroke="#0f2f57" strokeWidth="6" strokeLinecap="round" />
+                    <path d="M200 90 V140" stroke="#0f2f57" strokeWidth="6" strokeLinecap="round" />
+                    <path d="M120 90 A 40 40 0 0 1 200 90" stroke="#0f2f57" strokeWidth="6" fill="none" />
+
+                    {/* Load Block */}
+                    <rect x="90" y="170" width="60" height="50" rx="4" stroke="#0f2f57" strokeWidth="4" fill="#dbe5f1" />
+                    <line x1="90" y1="185" x2="150" y2="185" stroke="#0f2f57" strokeWidth="2" />
+                    <text x="120" y="210" fontSize="14" fontWeight="800" fill="#0f2f57" textAnchor="middle">LOAD</text>
+
+                    {/* Hook hardware */}
+                    <path d="M120 170 V160 Q120 150 128 150 Q135 150 130 160" stroke="#0f2f57" strokeWidth="4" fill="none" strokeLinecap="round" />
+
+                    {/* Motion Arrows */}
+                    <path d="M200 150 V200" stroke="#0f2f57" strokeWidth="3" strokeDasharray="6 6" />
+                    <path d="M200 200 L192 192 M200 200 L208 192" stroke="#0f2f57" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                    <text x="215" y="185" fontSize="14" fontWeight="800" fill="#0f2f57">PULL</text>
+
+                    <path d="M60 200 V150" stroke="#0f2f57" strokeWidth="3" strokeDasharray="5 5" />
+                    <path d="M60 150 L54 158 M60 150 L66 158" stroke="#0f2f57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+            );
+        }
+
+        function FlagpoleArt() {
+            return (
+                <svg viewBox="0 0 200 140" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Base Mount */}
+                    <rect x="30" y="125" width="40" height="10" rx="2" stroke="#0f2f57" strokeWidth="3" fill="#dbe5f1" />
+                    <line x1="10" y1="135" x2="90" y2="135" stroke="#0f2f57" strokeWidth="4" strokeLinecap="round" />
+
+                    {/* Main Pole */}
+                    <rect x="44" y="20" width="12" height="105" stroke="#0f2f57" strokeWidth="3" fill="#f8fafc" />
+
+                    {/* Cleat Hardware */}
+                    <path d="M56 80 L62 75 V85 Z" stroke="#0f2f57" strokeWidth="2" fill="#dbe5f1" strokeLinejoin="round" />
+
+                    {/* Pulley/Truck assembly at top */}
+                    <circle cx="50" cy="15" r="5" fill="#0f2f57" />
+                    <circle cx="64" cy="22" r="7" stroke="#0f2f57" strokeWidth="3" fill="#dbe5f1" />
+
+                    {/* Continuous Rope */}
+                    <path d="M68 22 V80" stroke="#0f2f57" strokeWidth="2" />
+                    <path d="M60 22 V80" stroke="#0f2f57" strokeWidth="2" />
+                    <path d="M60 22 A 4 4 0 0 1 68 22" stroke="#0f2f57" strokeWidth="2" fill="none" />
+
+                    {/* Flag */}
+                    <path d="M60 30 Q100 20 140 35 Q120 45 130 65 Q90 55 60 65 Z" stroke="#0f2f57" strokeWidth="3" fill="#dbe5f1" strokeLinejoin="round" />
+
+                    {/* Directional Arrows */}
+                    <path d="M75 50 V70" stroke="#0f2f57" strokeWidth="2" strokeDasharray="3 3" />
+                    <path d="M75 70 L72 66 M75 70 L78 66" stroke="#0f2f57" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M150 65 V45" stroke="#0f2f57" strokeWidth="2" strokeDasharray="3 3" />
+                    <path d="M150 45 L147 49 M150 45 L153 49" stroke="#0f2f57" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+            );
+        }
+
+        function BlindsArt() {
+            return (
+                <svg viewBox="0 0 200 140" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Outer Window Frame */}
+                    <rect x="30" y="15" width="110" height="110" stroke="#0f2f57" strokeWidth="4" fill="#f8fafc" />
+                    <rect x="36" y="21" width="98" height="98" stroke="#0f2f57" strokeWidth="2" fill="none" opacity="0.2" />
+
+                    {/* Top Headrail (Cutaway to show mechanism) */}
+                    <rect x="34" y="18" width="102" height="14" stroke="#0f2f57" strokeWidth="3" fill="#dbe5f1" />
+                    <circle cx="115" cy="25" r="5" stroke="#0f2f57" strokeWidth="2" fill="#f8fafc" />
+
+                    {/* Individual Slats */}
+                    <path d="M40 45 L130 50 M40 60 L130 65 M40 75 L130 80 M40 90 L130 95" stroke="#0f2f57" strokeWidth="3" strokeLinecap="round" />
+
+                    {/* Routing and Pull Cords */}
+                    <path d="M60 32 V92 M100 32 V92" stroke="#0f2f57" strokeWidth="1.5" strokeDasharray="2 2" />
+                    <path d="M115 30 V105" stroke="#0f2f57" strokeWidth="2" />
+                    <circle cx="115" cy="108" r="3" fill="#0f2f57" />
+
+                    {/* Motion Arrow */}
+                    <path d="M125 70 V90" stroke="#0f2f57" strokeWidth="2" strokeDasharray="3 3" />
+                    <path d="M125 90 L122 86 M125 90 L128 86" stroke="#0f2f57" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+            );
+        }
+
+        function WellArt() {
+            return (
+                <svg viewBox="0 0 200 140" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Ground */}
+                    <line x1="20" y1="125" x2="180" y2="125" stroke="#0f2f57" strokeWidth="4" strokeLinecap="round" />
+
+                    {/* Masonry Well Base */}
+                    <path d="M60 125 V85 H140 V125" stroke="#0f2f57" strokeWidth="4" fill="#f8fafc" strokeLinejoin="round" />
+                    <path d="M60 100 H140 M60 112 H140 M80 85 V100 M120 85 V100 M100 100 V112 M75 112 V125 M115 112 V125" stroke="#0f2f57" strokeWidth="2" />
+
+                    {/* Timber A-Frame */}
+                    <line x1="65" y1="85" x2="85" y2="25" stroke="#0f2f57" strokeWidth="4" strokeLinecap="round" />
+                    <line x1="135" y1="85" x2="115" y2="25" stroke="#0f2f57" strokeWidth="4" strokeLinecap="round" />
+                    <line x1="75" y1="55" x2="125" y2="55" stroke="#0f2f57" strokeWidth="3" />
+                    <rect x="75" y="20" width="50" height="8" rx="2" stroke="#0f2f57" strokeWidth="3" fill="#dbe5f1" />
+
+                    {/* Hanging Pulley Mechanism */}
+                    <circle cx="100" cy="40" r="10" stroke="#0f2f57" strokeWidth="3" fill="#f8fafc" />
+                    <circle cx="100" cy="40" r="3" fill="#0f2f57" />
+                    <line x1="100" y1="28" x2="100" y2="30" stroke="#0f2f57" strokeWidth="3" />
+
+                    {/* Heavy Bucket & Rope */}
+                    <path d="M85 90 L90 115 H110 L115 90 Z" stroke="#0f2f57" strokeWidth="3" fill="#dbe5f1" strokeLinejoin="round" />
+                    <path d="M85 90 Q100 70 115 90" stroke="#0f2f57" strokeWidth="2" fill="none" />
+                    <path d="M100 80 V40 A 10 10 0 0 1 110 40 V65" stroke="#0f2f57" strokeWidth="2" fill="none" />
+
+                    {/* Motion Indicators */}
+                    <path d="M120 50 V70" stroke="#0f2f57" strokeWidth="2" strokeDasharray="3 3" />
+                    <path d="M120 70 L117 66 M120 70 L123 66" stroke="#0f2f57" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M75 90 V70" stroke="#0f2f57" strokeWidth="2" strokeDasharray="3 3" />
+                    <path d="M75 70 L72 74 M75 70 L78 74" stroke="#0f2f57" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+            );
+        }
+
+        function CraneArt() {
+            return (
+                <svg viewBox="0 0 200 140" className="h-full w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Foundation */}
+                    <line x1="10" y1="130" x2="190" y2="130" stroke="#0f2f57" strokeWidth="4" strokeLinecap="round" />
+
+                    {/* Truss Mast / Tower */}
+                    <path d="M40 130 V20 M60 130 V20" stroke="#0f2f57" strokeWidth="3" />
+                    <path d="M40 110 L60 90 M40 90 L60 110 M40 70 L60 50 M40 50 L60 70 M40 30 L60 10 M40 10 L60 30" stroke="#0f2f57" strokeWidth="1.5" />
+                    <path d="M40 110 H60 M40 90 H60 M40 70 H60 M40 50 H60 M40 30 H60" stroke="#0f2f57" strokeWidth="2" />
+
+                    {/* Truss Jib / Boom */}
+                    <path d="M60 30 H160 M60 10 H150 L160 30" stroke="#0f2f57" strokeWidth="3" strokeLinejoin="round" />
+                    <path d="M80 30 L70 10 M80 30 L90 10 M100 30 L90 10 M100 30 L110 10 M120 30 L110 10 M120 30 L130 10 M140 30 L130 10 M140 30 L150 10" stroke="#0f2f57" strokeWidth="1.5" />
+
+                    {/* Counter-jib & Machinery House */}
+                    <path d="M40 30 H20 M40 10 H20 L20 30" stroke="#0f2f57" strokeWidth="3" strokeLinejoin="round" />
+                    <rect x="15" y="30" width="10" height="15" stroke="#0f2f57" strokeWidth="2" fill="#dbe5f1" />
+
+                    {/* Trolley and Sheave (Pulley) block */}
+                    <rect x="135" y="30" width="15" height="6" stroke="#0f2f57" strokeWidth="2" fill="#f8fafc" />
+                    <circle cx="142.5" cy="50" r="6" stroke="#0f2f57" strokeWidth="2" fill="#f8fafc" />
+                    <circle cx="142.5" cy="50" r="2" fill="#0f2f57" />
+
+                    {/* Rigging line routing down to sheave */}
+                    <path d="M139 36 V50 A 3.5 3.5 0 0 0 146 50 V36" stroke="#0f2f57" strokeWidth="1.5" fill="none" />
+                    <line x1="60" y1="20" x2="135" y2="20" stroke="#0f2f57" strokeWidth="1.5" strokeDasharray="2 2" />
+                    <line x1="142.5" y1="56" x2="142.5" y2="90" stroke="#0f2f57" strokeWidth="2" />
+
+                    {/* Heavy Load / Pallet */}
+                    <rect x="130" y="90" width="25" height="20" rx="2" stroke="#0f2f57" strokeWidth="3" fill="#dbe5f1" />
+                    <line x1="130" y1="100" x2="155" y2="100" stroke="#0f2f57" strokeWidth="2" />
+
+                    {/* Hoist Motion Arrows */}
+                    <path d="M165 60 V80" stroke="#0f2f57" strokeWidth="2" strokeDasharray="3 3" />
+                    <path d="M165 60 L162 64 M165 60 L168 64" stroke="#0f2f57" strokeWidth="2" strokeLinecap="round" />
+                    <path d="M165 80 L162 76 M165 80 L168 76" stroke="#0f2f57" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+            );
+        }
+
+        function PulleyStemOnePagerVisual() {
+            const terms = [
+                ["Pulley", "a wheel with a groove for a rope or string"],
+                ["Force", "a push or pull"],
+                ["Load", "the object being lifted or moved"],
+                ["Direction", "the way something moves or is pulled"],
+            ];
+
+            const examples = [
+                {
+                    title: "Flagpole",
+                    text: "You pull down on the rope, and the flag goes up.",
+                    art: <FlagpoleArt />,
+                },
+                {
+                    title: "Window Blinds",
+                    text: "A cord runs through pulleys to help raise and lower the blinds.",
+                    art: <BlindsArt />,
+                },
+                {
+                    title: "Bucket in a Well",
+                    text: "A pulley helps guide the rope so a bucket can go down and come back up.",
+                    art: <WellArt />,
+                },
+                {
+                    title: "Construction Crane",
+                    text: "Cranes use pulleys to lift heavy materials safely and with control.",
+                    art: <CraneArt />,
+                },
+            ];
+
+            return (
+                <div className="bg-neutral-100 p-4 text-neutral-900 print:bg-white print:p-0">
+                    <div className="mx-auto w-[8.5in] min-h-[11in] bg-white p-7 shadow-lg print:shadow-none">
+                        <div className="grid grid-cols-[1.15fr_0.85fr] gap-6 border-b border-neutral-300 pb-5">
+                            <div>
+                                <h1 className="text-4xl font-bold tracking-tight">Pulley</h1>
+
+                                <div className="mt-5 rounded-xl border-l-[5px] border-neutral-800 bg-neutral-100 p-4">
+                                    <span className="mb-1 block text-xs font-bold uppercase tracking-[0.15em] text-neutral-500">
+                                        The Big Idea
+                                    </span>
+                                    <p className="text-[1.10rem] font-bold leading-snug text-neutral-900">
+                                        A pulley helps change the <span className="underline decoration-2 underline-offset-2">direction of a pull</span>, and pulley systems can make it <span className="underline decoration-2 underline-offset-2">easier to lift a load</span>.
+                                    </p>
+                                </div>
+
+                                <div className="mt-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-4 text-[15px] leading-snug">
+                                    A rope runs over a grooved wheel. When you pull on one side of the rope, the pulley guides the rope and helps move the load on the other side. One pulley is great for changing direction. More pulleys can share the work.
+                                </div>
+
+                                <div className="mt-5">
+                                    <h2 className="mb-2 text-[1.05rem] font-bold">Key Terms</h2>
+                                    <div className="grid grid-cols-2 gap-4 text-[14px] leading-snug">
+                                        {terms.map(([term, meaning]) => (
+                                            <div key={term} className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+                                                <span className="block font-bold text-neutral-800">{term}</span>
+                                                <span className="block pt-1 leading-tight text-neutral-700">{meaning}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex h-full flex-col justify-center rounded-[1.75rem] border border-neutral-200 bg-neutral-50 p-5">
+                                <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
+                                    <div className="h-[250px] w-full bg-white p-3">
+                                        <HeroPulleyArt />
+                                    </div>
+                                </div>
+                                <p className="mt-3 text-center text-[12px] leading-snug text-neutral-500">
+                                    Pull down on the rope and the load moves up.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mt-5 grid grid-cols-[0.98fr_1.02fr] gap-6">
+                            <div>
+                                <h2 className="text-[1.1rem] font-bold">How it works</h2>
+                                <div className="mt-2 rounded-2xl border border-neutral-200 p-4 text-[15px] leading-snug">
+                                    <p><span className="font-semibold">1.</span> The rope sits in the groove of the wheel.</p>
+                                    <p className="mt-2"><span className="font-semibold">2.</span> You pull on one end of the rope.</p>
+                                    <p className="mt-2"><span className="font-semibold">3.</span> The pulley guides the rope around the wheel.</p>
+                                    <p className="mt-2"><span className="font-semibold">4.</span> The load moves, often in a different direction than your pull.</p>
+                                </div>
+
+                                <div className="mt-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
+                                    <h2 className="text-[1.05rem] font-bold">Try it</h2>
+                                    <div className="mt-2 space-y-1.5 text-[15px] leading-snug">
+                                        <p>• Which part spins?</p>
+                                        <p>• Which part is the rope pulling?</p>
+                                        <p>• Are you pulling down, sideways, or up?</p>
+                                        <p>• Does adding more pulleys make lifting easier?</p>
+                                    </div>
+                                </div>
+
+                                <div className="mt-4 rounded-2xl border border-neutral-900 bg-neutral-900 p-4 text-white">
+                                    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-300">Takeaway</div>
+                                    <p className="mt-1 text-[15px] font-semibold leading-snug">
+                                        A pulley is a simple machine that helps us guide a rope and move things more easily.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2 className="text-[1.1rem] font-bold">Where you might see this idea</h2>
+                                <div className="mt-2 grid grid-cols-2 gap-3">
+                                    {examples.map((example) => (
+                                        <div key={example.title} className="overflow-hidden rounded-2xl border border-neutral-200 bg-white">
+                                            <div className="h-40 w-full bg-neutral-100 p-2">{example.art}</div>
+                                            <div className="p-3">
+                                                <div className="text-[15px] font-bold leading-snug text-neutral-900">{example.title}</div>
+                                                <p className="mt-1 text-[13px] leading-snug text-neutral-700">{example.text}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<PulleyStemOnePagerVisual />);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function ScotchYokeStemOnePagerVisual() {
+      const heroImage = "./scotch_yoke_hero.png";
+
+      const examples = [
+        {
+          title: "Water Pump",
+          text: "A spinning wheel could drive a pump that moved water with an up-and-down stroke.",
+          image: "./water_pump_hero.png",
+          alt: "Diagram of a water pump connected to a flywheel",
+          positionClass: "object-cover object-center mix-blend-multiply",
+        },
+        {
+          title: "Shaping Machine",
+          text: "Older shop machines used back-and-forth motion to cut or shape metal.",
+          image: "./shaping_machine_hero.png",
+          alt: "Diagram of a gear shaping machine",
+          positionClass: "object-cover object-center mix-blend-multiply",
+        },
+        {
+          title: "Oil Pumpjack",
+          text: "A motor spins, and the machine turns that motion into the pumping stroke used at the well.",
+          image: "./oil_pumpjack_hero.png",
+          alt: "Diagram of an oil pumpjack mechanism",
+          positionClass: "object-cover object-center mix-blend-multiply",
+        },
+        {
+          title: "Engine Piston",
+          text: "Engines also connect spinning and straight motion so pistons can move up and down.",
+          image: "./engine_piston_hero.png",
+          alt: "Diagram of an engine piston",
+          positionClass: "object-contain p-2 mix-blend-multiply",
+        },
+      ];
+
+      const terms = [
+        ["Rotation", "spinning in a circle"],
+        ["Linear", "moving in a straight line"],
+        ["Reciprocating", "moving back and forth"],
+        ["Mechanism", "parts working together"],
+      ];
+
+      return (
+        <div className="bg-neutral-100 p-4 text-neutral-900">
+          <div className="mx-auto w-[8.5in] bg-white p-7 shadow-lg">
+            <div className="grid grid-cols-[1.15fr_0.85fr] gap-6 border-b border-neutral-300 pb-5">
+              <div>
+                <h1 className="text-4xl font-bold tracking-tight">Scotch Yoke</h1>
+                
+                <div className="mt-5 rounded-xl border-l-[5px] border-neutral-800 bg-neutral-100 p-4">
+                  <span className="mb-1 block text-xs font-bold uppercase tracking-[0.15em] text-neutral-500">The Big Idea</span>
+                  <p className="text-[1.10rem] font-bold leading-snug text-neutral-900">
+                    A Scotch yoke changes <span className="underline decoration-2 underline-offset-2">spinning motion</span> into <span className="underline decoration-2 underline-offset-2">straight back-and-forth motion</span>.
+                  </p>
+                </div>
+
+                <div className="mt-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-4 text-[15px] leading-snug">
+                  A peg on the wheel moves in a circle. That peg sits in a slot and pushes the slider up and down. The wheel spins, but the slider can only move straight.
+                </div>
+
+                <div className="mt-5">
+                  <h2 className="mb-2 text-[1.05rem] font-bold">Key Terms</h2>
+                  <div className="grid grid-cols-2 gap-4 text-[14px] leading-snug">
+                    {terms.map(([term, meaning]) => (
+                      <div key={term} className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm">
+                        <span className="block font-bold text-neutral-800">{term}</span>
+                        <span className="block text-neutral-700 leading-tight pt-1">{meaning}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex h-full flex-col justify-center rounded-[1.75rem] border border-neutral-200 bg-neutral-50 p-5">
+                <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
+                  <img
+                    src={heroImage}
+                    alt="Scotch yoke mechanism diagram"
+                    className="h-[250px] w-full object-contain bg-white p-2"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-5 grid grid-cols-[0.98fr_1.02fr] gap-6">
+              <div>
+                <h2 className="text-[1.1rem] font-bold">How it works</h2>
+                <div className="mt-2 rounded-2xl border border-neutral-200 p-4 text-[15px] leading-snug">
+                  <p><span className="font-semibold">1.</span> The wheel turns in a circle.</p>
+                  <p className="mt-2"><span className="font-semibold">2.</span> The peg follows that circular path.</p>
+                  <p className="mt-2"><span className="font-semibold">3.</span> The slot forces the slider to move only up and down.</p>
+                  <p className="mt-2"><span className="font-semibold">4.</span> Engineers use this when a spinning power source must do a straight-line job.</p>
+                </div>
+
+                <div className="mt-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
+                  <h2 className="text-[1.05rem] font-bold">Try it</h2>
+                  <div className="mt-2 space-y-1.5 text-[15px] leading-snug">
+                    <p>• What part moves in a circle?</p>
+                    <p>• What part moves in a straight line?</p>
+                    <p>• Where does the pushing happen?</p>
+                    <p>• What changes direction?</p>
+                  </div>
+                </div>
+
+                <div className="mt-4 rounded-2xl border border-neutral-900 bg-neutral-900 p-4 text-white">
+                  <div className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-300">Takeaway</div>
+                  <p className="mt-1 text-[15px] font-semibold leading-snug">
+                    A Scotch yoke is a clever way to turn circular motion into straight back-and-forth motion.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <h2 className="text-[1.1rem] font-bold">Where you might see this idea</h2>
+                <div className="mt-2 grid grid-cols-2 gap-3">
+                  {examples.map((example) => (
+                    <div key={example.title} className="overflow-hidden rounded-2xl border border-neutral-200 bg-white">
+                      <div className="h-40 w-full bg-neutral-100">
+                        <img
+                          src={example.image}
+                          alt={example.alt}
+                          className={`h-full w-full ${example.positionClass}`}
+                        />
+                      </div>
+                      <div className="p-3">
+                        <div className="text-[15px] font-bold leading-snug text-neutral-900">{example.title}</div>
+                        <p className="mt-1 text-[13px] leading-snug text-neutral-700">{example.text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<ScotchYokeStemOnePagerVisual />);
+  </script>
+</body>
+</html>

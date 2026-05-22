@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cub Scout Skit — Lost Quarter</title>
+  <style>
+    :root {
+      --ink: #0f2f57;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d7dee7;
+      --soft: #f4f6f8;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #eef2f5;
+      color: var(--text);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 20px auto;
+      background: var(--paper);
+      padding: 0.55in;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    }
+
+    .top {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: #111827;
+    }
+
+    .sub {
+      margin-top: 6px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .intro {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #374151;
+      max-width: 6.8in;
+    }
+
+    .meta {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .meta-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fafbfc;
+    }
+
+    .meta-item strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 12px;
+      color: #374151;
+    }
+
+    .meta-item span {
+      font-size: 13px;
+      color: #111827;
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      color: #111827;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper);
+      padding: 14px 16px;
+    }
+
+    .bullets {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .bullets li {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .script {
+      display: grid;
+      gap: 8px;
+    }
+
+    .line {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 10px;
+      padding-bottom: 7px;
+      border-bottom: 1px dashed #e7ebf0;
+    }
+
+    .line:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .speaker {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+    }
+
+    .dialogue {
+      font-size: 14px;
+    }
+
+    .stage {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .notes {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fafbfc;
+      padding: 12px 14px;
+    }
+
+    .note strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 12px;
+      color: #374151;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .note p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media print {
+      body { background: white; }
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="top">
+      <h1>Lost Quarter</h1>
+      <div class="sub">Cub Scout skit • indoor • simple props • about 1 minute</div>
+      <p class="intro">
+        This is a very easy skit for younger Scouts because the action repeats, the joke is clear,
+        and the prop list is minimal. It works especially well for Lions and Tigers with a little leader prompting.
+      </p>
+
+      <div class="meta">
+        <div class="meta-item">
+          <strong>Cast</strong>
+          <span>4–8 Scouts</span>
+        </div>
+        <div class="meta-item">
+          <strong>Props</strong>
+          <span>Optional flashlight</span>
+        </div>
+        <div class="meta-item">
+          <strong>Length</strong>
+          <span>About 1 minute</span>
+        </div>
+        <div class="meta-item">
+          <strong>Best for</strong>
+          <span>Lions and Tigers</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Setup</h2>
+      <div class="box">
+        <ul class="bullets">
+          <li>One Scout stands still like a lamppost and points a flashlight at the ground, if using one.</li>
+          <li>Scout 1 is on the floor searching under the light.</li>
+          <li>Other Scouts enter one at a time and ask what is happening.</li>
+          <li>The humor comes from repeating the same action, then landing the final punchline clearly.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Script</h2>
+      <div class="box script">
+        <div class="line">
+          <div class="speaker">Stage note</div>
+          <div class="dialogue stage">One Scout stands still as a lamppost. If you have a flashlight, point it at the ground. Scout 1 is searching where the light is shining.</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 2</div>
+          <div class="dialogue">Hey, what are you looking for?</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 1</div>
+          <div class="dialogue">I lost a quarter.</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 2</div>
+          <div class="dialogue">I will help you find it.</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Stage note</div>
+          <div class="dialogue stage">Scout 2 starts searching in the same spot. Additional Scouts come in one at a time and repeat the same pattern.</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 3</div>
+          <div class="dialogue">Hey, what are you looking for?</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 1</div>
+          <div class="dialogue">I lost a quarter.</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 3</div>
+          <div class="dialogue">I will help you find it.</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Stage note</div>
+          <div class="dialogue stage">Repeat with as many Scouts as you want.</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 2</div>
+          <div class="dialogue">I do not see it. Are you sure you lost it here?</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 1</div>
+          <div class="dialogue">No. I lost it over there.</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 2</div>
+          <div class="dialogue">Then why are we looking over here?</div>
+        </div>
+        <div class="line">
+          <div class="speaker">Scout 1</div>
+          <div class="dialogue">Because the light is better over here!</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notes">
+      <div class="note">
+        <strong>Leader note</strong>
+        <p>For Lions, let the lamppost role be non-speaking and keep only 3–4 speaking parts. A leader can quietly cue the repeated lines from the front row.</p>
+      </div>
+    </div>
+
+    <div class="footer">Simple printable one-page handout for Pack or den use.</div>
+  </div>
+</body>
+</html>

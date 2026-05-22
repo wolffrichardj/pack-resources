@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Catapult Stem One-Pager</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        function CatapultStemOnePagerVisual() {
+            const heroImage = "./catapult_hero.png";
+
+            const examples = [
+                {
+                    title: "Mangonel",
+                    text: "A torsion-based catapult that uses twisted ropes to store energy and launch rocks.",
+                    image: "./mangonel.png",
+                    alt: "Technical diagram of a Mangonel torsion catapult",
+                    positionClass: "object-cover object-center mix-blend-multiply",
+                },
+                {
+                    title: "Trebuchet",
+                    text: "Uses a heavy counterweight to swing a long arm, creating massive launch speeds.",
+                    image: "./trebuchet.png",
+                    alt: "Technical diagram of a Trebuchet counterweight mechanism",
+                    positionClass: "object-cover object-center mix-blend-multiply",
+                },
+                {
+                    title: "Ballista",
+                    text: "A giant tension mechanism that works like a massive crossbow to fire bolts.",
+                    image: "./ballista.png",
+                    alt: "Technical diagram of a Ballista mechanism",
+                    positionClass: "object-cover object-center mix-blend-multiply",
+                },
+                {
+                    title: "Carrier Catapult",
+                    text: "Modern ships use steam or magnets to launch actual aircraft into flight!",
+                    image: "./carrier_catapult.png",
+                    alt: "Technical diagram of an aircraft carrier steam catapult",
+                    positionClass: "object-cover object-center mix-blend-multiply",
+                },
+            ];
+
+            const terms = [
+                ["Tension", "stretching something tight to store power"],
+                ["Potential Energy", "stored power waiting to be used"],
+                ["Kinetic Energy", "the actual energy of movement"],
+                ["Projectile", "the object being launched or thrown"],
+            ];
+
+            return (
+                <div className="bg-neutral-100 p-4 text-neutral-900 print:bg-white print:p-0">
+                    <div className="mx-auto w-[8.5in] min-h-[11in] bg-white p-7 shadow-lg print:shadow-none">
+
+                        {/* Top Header Section */}
+                        <div className="grid grid-cols-[1.15fr_0.85fr] gap-6 border-b border-neutral-300 pb-5">
+                            <div>
+                                <div className="flex items-center gap-3">
+                                    <h1 className="text-4xl font-bold tracking-tight text-neutral-800">Catapult</h1>
+                                    <span className="rounded-full bg-neutral-100 px-3 py-1 text-xs font-bold uppercase tracking-widest text-neutral-500 border border-neutral-200">Mechanism</span>
+                                </div>
+
+                                <div className="mt-5 rounded-xl border-l-[5px] border-neutral-800 bg-neutral-100 p-4">
+                                    <span className="mb-1 block text-xs font-bold uppercase tracking-[0.15em] text-neutral-500">The Big Idea</span>
+                                    <p className="text-[1.10rem] font-bold leading-snug text-neutral-900">
+                                        A catapult changes <span className="underline decoration-2 underline-offset-2">stored tension</span> into <span className="underline decoration-2 underline-offset-2">fast flying motion</span> to launch an object.
+                                    </p>
+                                </div>
+
+                                <div className="mt-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-4 text-[15px] leading-snug">
+                                    You pull the arm back to stretch a band or twist a rope, trapping energy inside. When you release the trigger, it snaps back to its normal size, swinging the arm super fast and throwing the projectile!
+                                </div>
+
+                                <div className="mt-5">
+                                    <h2 className="mb-2 text-[1.05rem] font-bold text-neutral-800">Key Terms</h2>
+                                    <div className="grid grid-cols-2 gap-4 text-[14px] leading-snug">
+                                        {terms.map(([term, meaning]) => (
+                                            <div key={term} className="rounded-xl border border-neutral-200 bg-white p-3 shadow-sm hover:border-neutral-300 transition-colors">
+                                                <span className="block font-bold text-neutral-900">{term}</span>
+                                                <span className="block pt-1 leading-tight text-neutral-700">{meaning}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Hero Image Section */}
+                            <div className="flex h-full flex-col justify-center rounded-[1.75rem] border border-neutral-200 bg-neutral-50 p-5">
+                                <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm flex items-center justify-center relative min-h-[250px]">
+                                    <img
+                                        src={heroImage}
+                                        alt="Da Vinci Catapult Engineering Diagram"
+                                        className="h-[250px] w-full object-contain bg-white p-2 transition-transform hover:scale-105 duration-500"
+                                    />
+                                </div>
+                                <p className="mt-3 text-center text-[12px] leading-snug font-medium text-neutral-500 italic">
+                                    A professional breakdown of a torsion-powered launch mechanism.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Bottom Details Section */}
+                        <div className="mt-5 grid grid-cols-[0.98fr_1.02fr] gap-6">
+
+                            {/* Left Column */}
+                            <div>
+                                <h2 className="text-[1.1rem] font-bold text-neutral-800 uppercase tracking-tight">How it works</h2>
+                                <div className="mt-2 rounded-2xl border border-neutral-200 p-4 text-[15px] leading-snug space-y-3">
+                                    <div className="flex gap-3">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-800 text-[12px] font-bold text-white">1</span>
+                                        <p>Pull the arm back to stretch or twist your energy source (like elastic bands).</p>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-800 text-[12px] font-bold text-white">2</span>
+                                        <p>The stretched material stores <em>potential energy</em>—it's ready to snap back!</p>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-800 text-[12px] font-bold text-white">3</span>
+                                        <p>The trigger releases the arm, letting the material return to its resting shape.</p>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neutral-800 text-[12px] font-bold text-white">4</span>
+                                        <p>The stored energy turns into <em>kinetic energy</em>, swinging the arm and launching the payload!</p>
+                                    </div>
+                                </div>
+
+                                <div className="mt-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-4">
+                                    <h2 className="text-[1.05rem] font-bold text-neutral-800">Experiment Corner</h2>
+                                    <div className="mt-2 space-y-1.5 text-[15px] leading-snug">
+                                        <p className="flex items-start gap-2">• <span className="text-neutral-700">What launch angle makes it fly the farthest?</span></p>
+                                    </div>
+                                </div>
+
+                                <div className="mt-4 rounded-2xl border border-neutral-900 bg-neutral-900 p-4 text-white shadow-md">
+                                    <div className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-400">Engineering Takeaway</div>
+                                    <p className="mt-1 text-[15px] font-semibold leading-snug">
+                                        Catapults are clever energy-storage machines that can release power all at once to achieve incredible speeds and distances!
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Right Column - Examples Grid */}
+                            <div>
+                                <h2 className="text-[1.1rem] font-bold text-neutral-800 uppercase tracking-tight">Where you might see this idea</h2>
+                                <div className="mt-2 grid grid-cols-2 gap-3">
+                                    {examples.map((example) => (
+                                        <div key={example.title} className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white transition-all hover:shadow-md">
+                                            <div className="h-40 w-full overflow-hidden bg-neutral-50 border-b border-neutral-100">
+                                                <img
+                                                    src={example.image}
+                                                    alt={example.alt}
+                                                    className={`h-full w-full ${example.positionClass} transition-transform group-hover:scale-110 duration-700`}
+                                                />
+                                            </div>
+                                            <div className="p-3">
+                                                <div className="text-[15px] font-bold leading-snug text-neutral-900">{example.title}</div>
+                                                <p className="mt-1 text-[13px] leading-tight text-neutral-600 line-clamp-3">{example.text}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<CatapultStemOnePagerVisual />);
+    </script>
+</body>
+
+</html>
