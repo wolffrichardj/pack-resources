@@ -21,6 +21,19 @@ This repo currently contains both older materials and newer standardized referen
 - `ceremonies/crossover/` is still a useful older ceremony asset set and remains more Pack 285-specific
 - `activities/` and `skits/` are lighter standalone resources that may evolve more gradually
 
+## Portability Status
+
+### Portable Now
+
+- `references/pack-operations/` pages are self-contained single HTML files
+- `skits/` one-pagers are standalone single HTML files
+- `ceremonies/crossover/{lion,tiger,wolf,bear,webelos,aol}.html` are now self-contained single HTML files with embedded styles and images
+
+### Still Asset-Dependent
+
+- `ceremonies/crossover/index.html` is still a hub page that points to sibling files
+- `activities/stem/` pages still depend on CDN scripts and, in some cases, local supporting images
+
 ## Organized By Purpose
 
 ### `activities/stem/`
