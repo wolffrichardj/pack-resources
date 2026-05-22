@@ -1,6 +1,25 @@
 # Pack Resources
 
-Scouting activity materials and one-page resources collected into a dedicated repository.
+Portable scouting resources collected into a dedicated repository.
+
+## Goal
+
+Build reusable scouting materials that are easy to share, adapt, and maintain over time.
+
+The strongest direction in this repo is:
+
+- purpose-based organization
+- portable single-file resources when practical
+- generic main guidance with local specifics moved into labeled example sections
+- lightweight verification for the more standardized page families
+
+## Current Shape
+
+This repo currently contains both older materials and newer standardized references.
+
+- `references/pack-operations/` is the cleanest standardized section today
+- `ceremonies/crossover/` is still a useful older ceremony asset set and remains more Pack 285-specific
+- `activities/` and `skits/` are lighter standalone resources that may evolve more gradually
 
 ## Organized By Purpose
 
@@ -33,6 +52,18 @@ Reusable pack operations references adapted from prior SOP notes.
 - `references/pack-operations/blue-gold/`
 - `references/pack-operations/new-family-orientation/`
 - `references/pack-operations/crossover/`
+
+These pages are intentionally self-contained single HTML files so they can be downloaded or shared individually.
+
+## Verification
+
+For the pack operations reference pages, run:
+
+```sh
+npm test
+```
+
+This uses Playwright to confirm the expected titles, headings, and portability assumptions for the four SOP pages.
 
 ## Notes
 
