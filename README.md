@@ -25,6 +25,15 @@ Standalone skit one-pagers for den or pack use.
 - `skits/bright-idea-skit_one-pager.html`
 - `skits/lost-quarter-skit_one-pager.html`
 
+### `references/pack-operations/`
+
+Reusable pack operations references adapted from prior SOP notes.
+
+- `references/pack-operations/pinewood-derby/`
+- `references/pack-operations/blue-gold/`
+- `references/pack-operations/new-family-orientation/`
+- `references/pack-operations/crossover/`
+
 ## Notes
 
 These files were copied from the Cub Scouts section of a larger scratchpad so they can be managed independently and grow with clearer structure over time.
