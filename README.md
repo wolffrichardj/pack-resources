@@ -2,15 +2,29 @@
 
 Scouting activity materials and one-page resources collected into a dedicated repository.
 
-## Current Content
+## Organized By Purpose
 
-- `catapult/`: interactive catapult activity pages and supporting images
-- `crossover/`: crossover ceremony pages, styles, and rank images
-- `pulley/`: pulley demonstration page
-- `scotch-yoke/`: scotch-yoke motion pages and reference images
-- `bright-idea-skit_one-pager.html`: skit one-pager
-- `lost-quarter-skit_one-pager.html`: skit one-pager
+### `activities/stem/`
+
+Hands-on STEM teaching pages and supporting images.
+
+- `activities/stem/catapult/`
+- `activities/stem/pulley/`
+- `activities/stem/scotch-yoke/`
+
+### `ceremonies/`
+
+Ceremony materials and supporting assets.
+
+- `ceremonies/crossover/`
+
+### `skits/`
+
+Standalone skit one-pagers for den or pack use.
+
+- `skits/bright-idea-skit_one-pager.html`
+- `skits/lost-quarter-skit_one-pager.html`
 
 ## Notes
 
-These files were copied from the Cub Scouts section of a larger scratchpad so they can be managed independently.
+These files were copied from the Cub Scouts section of a larger scratchpad so they can be managed independently and grow with clearer structure over time.
