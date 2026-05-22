@@ -4,7 +4,8 @@
   "description": "Scouting activity materials and one-page resources collected into a dedicated repository.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/verify-pack-pages.js",
+    "verify:pages": "node tests/verify-pack-pages.js"
   },
   "repository": {
     "type": "git",
