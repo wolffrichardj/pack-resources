@@ -4,7 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Family Orientation Pack Reference</title>
-    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --ink: #163047; --muted: #5f6f7f; --paper: #f3efe6; --card: #fffdf8; --accent: #b46a2a; --green: #4d6b50; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Georgia, "Times New Roman", serif; background: linear-gradient(180deg, #f8f3e8 0%, #efe6d5 100%); color: var(--ink); line-height: 1.55; padding: 2rem 1rem 3rem; }
+        .page { max-width: 1120px; margin: 0 auto; background: var(--card); border: 1px solid rgba(22, 48, 71, 0.08); box-shadow: 0 18px 48px rgba(39, 36, 29, 0.12); overflow: hidden; }
+        .hero { padding: 2.5rem 2.5rem 2rem; background: linear-gradient(135deg, rgba(180, 106, 42, 0.95), rgba(77, 107, 80, 0.92)); color: #fffdf9; }
+        .eyebrow { display: inline-block; font-size: 0.78rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.35rem 0.7rem; border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 999px; margin-bottom: 1rem; }
+        .hero h1 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.05; margin-bottom: 0.8rem; }
+        .hero p { max-width: 70ch; font-size: 1.06rem; }
+        .hero-grid, .overview-grid, .two-column { display: grid; gap: 1.5rem; }
+        .hero-grid { grid-template-columns: 2fr 1fr; align-items: end; }
+        .meta-card { background: rgba(255, 253, 249, 0.13); border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 18px; padding: 1rem 1.1rem; }
+        .meta-card h2 { font-size: 0.9rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.4rem; }
+        .meta-card ul { list-style: none; }
+        .meta-card li + li { margin-top: 0.35rem; }
+        .content { padding: 2rem 2.5rem 2.5rem; }
+        .overview-grid { grid-template-columns: 1.15fr 0.85fr; margin-bottom: 1.5rem; }
+        .callout, .section, .checklist li, .example-card { border-radius: 18px; }
+        .callout { background: var(--paper); border-left: 6px solid var(--accent); padding: 1.1rem 1.15rem; }
+        .callout strong { display: block; margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.8rem; color: var(--muted); }
+        .section { border: 1px solid rgba(22, 48, 71, 0.1); padding: 1.25rem; background: #fffdfa; }
+        .section h2 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+        .section p + p, .section li + li, .example-card + .example-card { margin-top: 0.75rem; }
+        .section ul, .section ol { margin-left: 1.2rem; }
+        .checklist { list-style: none; margin-left: 0; display: grid; gap: 0.75rem; }
+        .checklist li { padding: 0.9rem 1rem; background: #fff8ee; border: 1px solid rgba(180, 106, 42, 0.18); }
+        .checklist strong { display: block; margin-bottom: 0.25rem; }
+        .flow { counter-reset: step; list-style: none; margin-left: 0; display: grid; gap: 0.8rem; }
+        .flow li { display: grid; grid-template-columns: auto 1fr; gap: 0.9rem; align-items: start; padding: 0.9rem 1rem; background: #f8fbf8; border: 1px solid rgba(77, 107, 80, 0.18); border-radius: 16px; }
+        .flow li::before { counter-increment: step; content: counter(step); width: 2rem; height: 2rem; border-radius: 999px; background: var(--green); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        .two-column { grid-template-columns: 1fr 1fr; }
+        .example-section { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 2px dashed rgba(180, 106, 42, 0.35); }
+        .example-section h2 { margin-bottom: 0.75rem; }
+        .example-card { background: linear-gradient(180deg, rgba(242, 224, 201, 0.52), rgba(255, 253, 248, 0.92)); border: 1px solid rgba(180, 106, 42, 0.2); padding: 1rem 1.1rem; }
+        footer { border-top: 1px solid rgba(22, 48, 71, 0.08); color: var(--muted); font-size: 0.92rem; padding: 1rem 2.5rem 1.5rem; }
+        @media (max-width: 860px) {
+            .hero-grid, .overview-grid, .two-column { grid-template-columns: 1fr; }
+            .hero, .content, footer { padding-left: 1.2rem; padding-right: 1.2rem; }
+        }
+    </style>
 </head>
 <body>
     <div class="page">
