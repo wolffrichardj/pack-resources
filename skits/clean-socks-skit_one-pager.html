@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cub Scout Skit - Clean Socks</title><style>
+    :root {
+      --ink: #0f2f57;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d7dee7;
+      --soft: #f4f6f8;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #eef2f5;
+      color: var(--text);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 20px auto;
+      background: var(--paper);
+      padding: 0.55in;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    }
+
+    .top {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: #111827;
+    }
+
+    .sub {
+      margin-top: 6px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .intro {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #374151;
+      max-width: 6.8in;
+    }
+
+    .meta {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .meta-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fafbfc;
+    }
+
+    .meta-item strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 12px;
+      color: #374151;
+    }
+
+    .meta-item span {
+      font-size: 13px;
+      color: #111827;
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      color: #111827;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper);
+      padding: 14px 16px;
+    }
+
+    .bullets {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .bullets li {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .script {
+      display: grid;
+      gap: 8px;
+    }
+
+    .line {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 10px;
+      padding-bottom: 7px;
+      border-bottom: 1px dashed #e7ebf0;
+    }
+
+    .line:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .speaker {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+    }
+
+    .dialogue {
+      font-size: 14px;
+    }
+
+    .stage {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .notes {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fafbfc;
+      padding: 12px 14px;
+    }
+
+    .note strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 12px;
+      color: #374151;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .note p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media print {
+      body { background: white; }
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  
+    /* Shared compact layout: same type sizes as the original handouts. */
+    .top { padding-bottom: 10px; margin-bottom: 12px; }
+    .intro { margin: 10px 0; }
+    .meta { margin-top: 12px; }
+    .meta-item { padding: 8px 10px; }
+    .section, .notes { margin-top: 12px; }
+    h2 { margin-bottom: 7px; }
+    .box { padding: 10px 12px; }
+    .script { gap: 5px; }
+    .line { padding-bottom: 4px; grid-template-columns: 100px 1fr; }
+    .bullets li { margin: 3px 0; }
+    .note { padding: 9px 12px; }
+    .footer { margin-top: 12px; padding-top: 8px; font-size: 10px; }
+    @page { size: Letter portrait; margin: 0; }
+    @media print {
+      .page { width: 8.5in; min-height: 0; padding: 0.5in 0.55in; }
+      .stage { color: #4b5563; }
+      .section, .notes, .meta { break-inside: avoid; }
+    }
+    @media screen and (max-width: 820px) {
+      .page { width: 100%; min-height: 0; margin: 0; padding: 24px; }
+      .meta { grid-template-columns: repeat(2, 1fr); }
+    }
+</style></head>
+<body><main class="page"><div class="top"><h1>Clean Socks</h1><div class="sub">Cub Scout skit · simple props · 1-2 minutes</div><p class="intro">A supply helper hands out socks. One Scout has a surprising idea of how many pairs they need.</p><div class="meta"><div class="meta-item"><strong>Cast</strong><span>5 Scouts</span></div><div class="meta-item"><strong>Props</strong><span>Clean socks or tokens</span></div><div class="meta-item"><strong>Length</strong><span>1-2 minutes</span></div><div class="meta-item"><strong>Best for</strong><span>Wolves and older</span></div></div></div>
+<section class="section"><h2>Setup</h2><div class="box"><ul class="bullets"><li>One supply helper faces four Scouts in a short line. Use clean socks, paper tokens, or imaginary pairs.</li><li>Hand over a token or mime each order; there is no need to count out twelve real pairs.</li></ul></div></section>
+<section class="section"><h2>Script</h2><div class="box script"><div class="line"><div class="speaker">Helper</div><div class="dialogue">New socks! Step right up. How many pairs do you need?</div></div><div class="line"><div class="speaker">Scout 1</div><div class="dialogue">Two pairs. One to wear and one in the laundry.</div></div><div class="line"><div class="speaker">Helper</div><div class="dialogue">Here you go. Next!</div></div><div class="line"><div class="speaker">Scout 2</div><div class="dialogue">Four pairs. I change them Monday, Wednesday, Friday, and Sunday.</div></div><div class="line"><div class="speaker">Helper</div><div class="dialogue">Four it is! Next!</div></div><div class="line"><div class="speaker">Scout 3</div><div class="dialogue">Seven pairs, please.</div></div><div class="line"><div class="speaker">Helper</div><div class="dialogue">A fresh pair every day?</div></div><div class="line"><div class="speaker">Scout 3</div><div class="dialogue">You got it!</div></div><div class="line"><div class="speaker">Helper</div><div class="dialogue">Excellent. And how many do you need?</div></div><div class="line"><div class="speaker">Scout 4</div><div class="dialogue">Twelve pairs!</div></div><div class="line"><div class="speaker">Helper</div><div class="dialogue">Twelve? Why so many?</div></div><div class="line"><div class="speaker">Scout 4</div><div class="dialogue">Well, there&#x27;s January, February, March...</div></div><div class="line"><div class="speaker">Stage note</div><div class="dialogue stage">The helper freezes, then looks toward the audience. Everyone groans together and exits.</div></div></div></section>
+<div class="notes"><div class="note"><strong>Leader note</strong><p>Assign the months to a Scout who can say them confidently. Pause after &quot;March&quot; instead of listing all twelve. Explain privately that the joke is the silly misunderstanding; change socks daily and whenever wet or dirty.</p></div></div>
+<footer class="footer">Printable handout for any pack or den. Adapted from a traditional skit; wording and staging revised.<br>Reference: <a href="https://scoutlife.org/outdoors/182685/funny-campfire-skits/">Scout Life - 10 Funny Campfire Skits</a></footer></main></body></html>
