@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cub Scout Skit - Invisible Bench</title><style>
+    :root {
+      --ink: #0f2f57;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d7dee7;
+      --soft: #f4f6f8;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #eef2f5;
+      color: var(--text);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 20px auto;
+      background: var(--paper);
+      padding: 0.55in;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    }
+
+    .top {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: #111827;
+    }
+
+    .sub {
+      margin-top: 6px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .intro {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #374151;
+      max-width: 6.8in;
+    }
+
+    .meta {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .meta-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fafbfc;
+    }
+
+    .meta-item strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 12px;
+      color: #374151;
+    }
+
+    .meta-item span {
+      font-size: 13px;
+      color: #111827;
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      color: #111827;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper);
+      padding: 14px 16px;
+    }
+
+    .bullets {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .bullets li {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .script {
+      display: grid;
+      gap: 8px;
+    }
+
+    .line {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 10px;
+      padding-bottom: 7px;
+      border-bottom: 1px dashed #e7ebf0;
+    }
+
+    .line:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .speaker {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+    }
+
+    .dialogue {
+      font-size: 14px;
+    }
+
+    .stage {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .notes {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fafbfc;
+      padding: 12px 14px;
+    }
+
+    .note strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 12px;
+      color: #374151;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .note p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+
+    @media print {
+      body { background: white; }
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+
+    /* Shared compact layout: same type sizes as the original handouts. */
+    .top { padding-bottom: 10px; margin-bottom: 12px; }
+    .intro { margin: 10px 0; }
+    .meta { margin-top: 12px; }
+    .meta-item { padding: 8px 10px; }
+    .section, .notes { margin-top: 12px; }
+    h2 { margin-bottom: 7px; }
+    .box { padding: 10px 12px; }
+    .script { gap: 5px; }
+    .line { padding-bottom: 4px; grid-template-columns: 100px 1fr; }
+    .bullets li { margin: 3px 0; }
+    .note { padding: 9px 12px; }
+    @page { size: Letter portrait; margin: 0; }
+    @media print {
+      .page { width: 8.5in; min-height: 0; padding: 0.5in 0.55in; }
+      .stage { color: #4b5563; }
+      .section, .notes, .meta { break-inside: avoid; }
+    }
+    @media screen and (max-width: 820px) {
+      .page { width: 100%; min-height: 0; margin: 0; padding: 24px; }
+      .meta { grid-template-columns: repeat(2, 1fr); }
+    }
+</style></head>
+<body><main class="page"><div class="top"><h1>Invisible Bench</h1><div class="sub">Cub Scout skit · simple props · About 1 minute</div><p class="intro">Scouts settle onto an imaginary bench. When the last Scout says it was moved, everyone suddenly loses their seat.</p><div class="meta"><div class="meta-item"><strong>Cast</strong><span>4-8 Scouts</span></div><div class="meta-item"><strong>Props</strong><span>None</span></div><div class="meta-item"><strong>Length</strong><span>About 1 minute</span></div><div class="meta-item"><strong>Best for</strong><span>Any den</span></div></div></div>
+<section class="section"><h2>Setup</h2><div class="box"><ul class="bullets"><li>Scout 1 starts in a shallow squat, facing the audience as if seated. Reserve the last Scout as the bench mover; that Scout never joins the seat.</li><li>Scouts 2 through the next-to-last enter one at a time and sit beside Scout 1. Leave enough space for the rehearsed pretend fall.</li></ul></div></section>
+<section class="section"><h2>Script</h2><div class="box script"><div class="line"><div class="speaker">Scout 2</div><div class="dialogue">What are you doing?</div></div><div class="line"><div class="speaker">Scout 1</div><div class="dialogue">Sitting on this invisible bench.</div></div><div class="line"><div class="speaker">Scout 2</div><div class="dialogue">Can I sit with you?</div></div><div class="line"><div class="speaker">Scout 1</div><div class="dialogue">Sure!</div></div><div class="line"><div class="speaker">Stage note</div><div class="dialogue stage">Scout 2 joins the pretend seat. Each remaining sitter repeats Scout 2&#x27;s questions; Scout 1 repeats the answers. The bench mover enters last and stays standing.</div></div><div class="line"><div class="speaker">Bench mover</div><div class="dialogue">What are you all doing?</div></div><div class="line"><div class="speaker">All seated</div><div class="dialogue">Sitting on the invisible bench!</div></div><div class="line"><div class="speaker">Stage note</div><div class="dialogue stage">The mover points to a different spot.</div></div><div class="line"><div class="speaker">Bench mover</div><div class="dialogue">But I moved it over there this morning!</div></div><div class="line"><div class="speaker">Stage note</div><div class="dialogue stage">On &quot;morning,&quot; all sitters cry &quot;Whoa!&quot; and pretend the seat disappears: lower carefully into a seated position on the ground. The mover stays standing. Hold for laughter, then get up and exit.</div></div></div></section>
+<div class="notes"><div class="note"><strong>Leader note</strong><p>Rehearse the ending first on clear, level ground: a controlled sit-down, never a backward drop. Use shallow squats and quick entrances. Where sitting down is unsuitable, dip lower and throw hands forward as if losing the seat. The reaction goes DOWN, not up; the missing support is the punchline.</p></div></div>
+</main></body></html>

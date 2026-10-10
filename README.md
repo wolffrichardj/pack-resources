@@ -54,8 +54,11 @@ Ceremony materials and supporting assets.
 
 Standalone skit one-pagers for den or pack use.
 
-- `skits/bright-idea-skit_one-pager.html`
-- `skits/lost-quarter-skit_one-pager.html`
+- `skits/invisible-bench-skit_one-pager.html`
+- `skits/clean-socks-skit_one-pager.html`
+- `skits/viper-is-coming-skit_one-pager.html`
+
+The [classic skit print packet](output/pdf/classic-cub-scout-skits.pdf) contains these three skits, one per US Letter page. Each uses the original handouts' type sizes and section format. The [quality review](skits/classic-skits-quality-review.md) records two internal review loops. Rebuild with `node scripts/build-classic-skits.js`; optionally pass a Python executable with `pypdf` installed as the first argument.
 
 ### `references/pack-operations/`
 
