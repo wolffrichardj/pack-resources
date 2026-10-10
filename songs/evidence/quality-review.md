@@ -1,6 +1,6 @@
 # Classic song sheets: two internal review loops
 
-**Current revision:** four pages: Row, Mountain, B-I-N-G-O, and John Jacob. The initial review below is historical; the selection revision and two new review loops at the end document the current packet.
+**Current revision:** four pages: Row, Mountain, B-I-N-G-O, and John Jacob. Earlier reviews below document prior layouts. The final worked-repeat review records the current packet, including two complete example passes on B-I-N-G-O and John Jacob.
 
 October 10, 2026. These are internal editorial reviews from three practical perspectives. No actual Scout leader, den leader, child, or singing audience reviewed or rehearsed the packet. No physical print job was submitted.
 
@@ -65,3 +65,24 @@ After the B-I-N-G-O heading change, rebuilt the PDF and independently rechecked 
 - `pdfinfo` confirms four unencrypted Letter pages without forms or JavaScript. All final 120dpi page renders were individually inspected. `validation.json` records the final PDF digest, all four render digests, and source-evidence digests.
 - `npm test` passed four pack-operations pages and six ceremony pages. `git diff --check` passed. SHA-256 comparison confirmed all 11 protected files unchanged, including root README, retained skit HTML/review/PDF, and unrelated regatta HTML/PDF files.
 - Both review loops are internal editorial checks, not real leader reviews or a live rehearsal. No physical print job was sent.
+
+
+## Worked repeats: teaching revision
+
+The repeating songs now show two complete examples. B-I-N-G-O places the all-letter pass beside the one-clap pass, followed by a numbered chart for passes 3-6. John Jacob prints the same complete verse twice under Normal voice and Quieter voice, with both Fa-la endings bolded. The continuation cue makes clear that later repeats keep getting quieter. Row and Mountain are unchanged.
+
+### Review loop 1: content and teaching
+
+| Perspective | Check | Result |
+| --- | --- | --- |
+| Scout leader | The example passes follow the already sourced repeat mechanisms. B-I-N-G-O's second pass repeats its farmer opening and name-o ending and replaces B with a clap in all three spelling lines. John Jacob's two blocks are identical lyrics. | Pass. No new verse or changed source wording; performance labels are separate from lyrics. |
+| Audience | Inspected the new pages in grayscale. B-I-N-G-O's two columns read in numbered order; each complete line fits. John Jacob's two blocks make the changed volume visible and the bold ending draws attention to the loud exception. | Pass. Retained 18px lyrics and the established title, margin, and box styles. |
+| Den leader | Walked through first and second passes, then each continuation. B-I-N-G-O has six total passes, with three spelling patterns per pass; John Jacob has two examples and a clear instruction for further quieter repeats. | Pass. Examples demonstrate the change without requiring every repeat to be printed. |
+
+### Review loop 2: final export
+
+Rechecked every final page rendered in grayscale at 120dpi. The builder verified the full lyric blocks, performance headings, directions, remaining clap patterns and numbering, PDF text order, and one-page Letter dimensions. All four pages remain clear and complete with no clipping, overlap, broken table rows, printed links, or browser header/footer. Print heights: Row 408px, Mountain 822px, B-I-N-G-O 747px, John Jacob 765px, within 1056px. All PDF text stays inside 0.5-inch print margins.
+
+Compared the expanded examples with the previous source record: B-I-N-G-O's new pass changes only the three B spelling positions to claps; John Jacob repeats the exact six source lines twice. Row and Mountain JSON records and HTML files are unchanged. SHA-256 checks confirmed all 11 protected files unchanged. `npm test` and `git diff --check` passed. The validation manifest now records the updated PDF and four final grayscale render digests.
+
+Both loops are internal editorial checks, without a live group rehearsal. No physical print job was submitted.

@@ -74,7 +74,7 @@
     "source": "Stanford DREME, Math Song Guide Based on BINGO (2022), Song Lyrics panel; who selected from printed optional (who)",
     "sections": [
       {
-        "label": "Verse · Pass 1",
+        "label": "Pass 1 · Sing all letters",
         "lines": [
           "There was a farmer who had a dog,",
           "And Bingo was his name-o.",
@@ -83,11 +83,22 @@
           "B-I-N-G-O",
           "And Bingo was his name-o."
         ]
+      },
+      {
+        "label": "Pass 2 · Clap for B",
+        "lines": [
+          "There was a farmer who had a dog,",
+          "And Bingo was his name-o.",
+          "(clap)-I-N-G-O,",
+          "(clap)-I-N-G-O,",
+          "(clap)-I-N-G-O",
+          "And Bingo was his name-o."
+        ]
       }
     ],
-    "flow": "Sing the whole verse six times, using the spelling patterns below in order. Each clap takes the place of one letter.",
+    "flow": "Sing Pass 1, then Pass 2 with a clap in place of B. On each later pass, replace one more letter with a clap.",
     "teaching": null,
-    "repeatCue": "Sing each pattern three times, then finish with \"And Bingo was his name-o.\" Keep the first two lines the same on every pass.",
+    "repeatCue": "Repeat the whole verse for each pass below. Sing each spelling pattern three times; keep the first two lines and final name-o line the same.",
     "repeatPatterns": [
       "B-I-N-G-O",
       "(clap)-I-N-G-O",
@@ -95,7 +106,8 @@
       "(clap)-(clap)-(clap)-G-O",
       "(clap)-(clap)-(clap)-(clap)-O",
       "(clap)-(clap)-(clap)-(clap)-(clap)"
-    ]
+    ],
+    "repeatStartPass": 3
   },
   {
     "slug": "john-jacob-jingleheimer-schmidt",
@@ -104,7 +116,18 @@
     "source": "LowGUkulele.com, John Jacob Jingleheimer Schmidt - Low G Ukulele, Level 1 (May 5, 2025), traditional lyric underlay only",
     "sections": [
       {
-        "label": "Verse",
+        "label": "Pass 1 · Normal voice",
+        "lines": [
+          "John Jacob Jingleheimer Schmidt.",
+          "His name is my name too!",
+          "Whenever we go out,",
+          "the people always shout.",
+          "They say John Jacob Jingleheimer Schmidt,",
+          "Fa-la-la-la-la-la-la!"
+        ]
+      },
+      {
+        "label": "Pass 2 · Quieter voice",
         "lines": [
           "John Jacob Jingleheimer Schmidt.",
           "His name is my name too!",
@@ -115,7 +138,7 @@
         ]
       }
     ],
-    "flow": "Repeat the verse, getting quieter each time. Always sing the final \"Fa-la-la-la-la-la-la!\" line loudly.",
+    "flow": "Sing Pass 2 more quietly than Pass 1, then keep getting quieter on later repeats. Sing the Fa-la ending loudly every time.",
     "teaching": null
   }
 ]

@@ -19,12 +19,15 @@ const songs = require('../songs/evidence/source-transcriptions.json');
     for (const song of songs) {
       await page.goto(pathToFileURL(path.resolve(`songs/${song.slug}_one-pager.html`)).href);
       assert.equal(await page.locator('h1').textContent(), song.title);
+      assert.deepEqual(await page.locator('.block h2').allTextContents(), song.sections.map(section => section.label), `${song.slug}: verse/pass cue mismatch`);
       assert.deepEqual(await page.locator('.lyrics').evaluateAll(nodes => nodes.map(node => node.innerText.split('\n'))), song.sections.map(section => section.lines), `${song.slug}: source transcription mismatch`);
       assert.equal(await page.locator('.flow').textContent(), song.flow);
       if (song.repeatPatterns) {
+        const start = song.repeatStartPass || 1;
+        const patterns = song.repeatPatterns.slice(start - 1);
         assert.equal(await page.locator('.repeat-cue').textContent(), song.repeatCue);
-        assert.deepEqual(await page.locator('.spelling').allTextContents(), song.repeatPatterns, `${song.slug}: repeat pattern mismatch`);
-        assert.deepEqual(await page.locator('.repeat-table tbody td:first-child').allTextContents(), song.repeatPatterns.map((_, i) => String(i + 1)), `${song.slug}: repeat order mismatch`);
+        assert.deepEqual(await page.locator('.spelling').allTextContents(), patterns, `${song.slug}: repeat pattern mismatch`);
+        assert.deepEqual(await page.locator('.repeat-table tbody td:first-child').allTextContents(), patterns.map((_, i) => String(i + start)), `${song.slug}: repeat order mismatch`);
       }
       if (song.teaching) assert.equal(await page.locator('.note p').textContent(), song.teaching);
       else assert.equal(await page.locator('.note').count(), 0);
@@ -59,13 +62,18 @@ for song in songs:
     assert normalize(song['title']) in text
     position = 0
     for section in song['sections']:
+        label = normalize(section['label'])
+        label_position = text.find(label, position)
+        assert label_position >= 0, song['slug'] + ': missing or reordered verse/pass cue'
+        position = label_position + len(label)
         fragment = normalize(' '.join(section['lines']))
         found = text.find(fragment, position)
         assert found >= 0, song['slug'] + ': missing or reordered PDF lyrics'
         position = found + len(fragment)
     if song.get('repeatPatterns'):
         assert normalize(song['repeatCue']) in text, song['slug'] + ': missing repeat directions'
-        for number, pattern in enumerate(song['repeatPatterns'], 1):
+        start = song.get('repeatStartPass', 1)
+        for number, pattern in enumerate(song['repeatPatterns'][start - 1:], start):
             fragment = normalize(str(number) + ' ' + pattern)
             found = text.find(fragment, position)
             assert found >= 0, song['slug'] + ': missing or reordered repeat pattern'
