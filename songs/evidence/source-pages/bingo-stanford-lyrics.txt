@@ -1,0 +1,21 @@
+Checked: October 10, 2026
+Source: https://familymath.stanford.edu/app/uploads/2022/03/BINGO.pdf
+Downloaded source PDF SHA-256: 64b4b1398fb2305fb5ce5d833b2875df11c4cdd25087bcabc1ffb6a88955d069
+
+Stanford DREME Network, 2022, one-page guide. Visually checked original PDF.
+Public-domain declaration: “BINGO” song lyrics are in the Public Domain. Author unknown.
+Song Lyrics panel:
+There was a farmer (who) had a dog,
+And Bingo was his name-o.
+B-I-N-G-O, B-I-N-G-O, B-I-N-G-O
+And Bingo was his name-o.
+There was a farmer…
+(clap)-I-N-G-0 (3 times)
+(clap)-(clap)-N-G-O (3 times)
+(clap)-(clap)-(clap)-G-O (3 times)
+(clap)-(clap)-(clap)-(clap)-O (3 times)
+(clap)-(clap)-(clap)-(clap)-(clap) (3 times)
+And Bingo was his name-o.
+The source prints a zero after G in the one-clap line; handout uses letter O,
+consistent with the opening spelling and all other patterns. Selected printed
+optional who; split the first spelling into three lines without changing words.

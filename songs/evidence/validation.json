@@ -1,0 +1,59 @@
+{
+  "checked_on": "2026-10-10",
+  "pdf": "output/pdf/classic-campfire-songs.pdf",
+  "pdf_sha256": "b5cf6e6e244ded11d2b957c16588483063f87adb6ad0176bdd9cdeec6c9b45b5",
+  "pages": [
+    {
+      "number": 1,
+      "song": "Row, Row, Row Your Boat",
+      "size_points": [
+        612.0,
+        792.0
+      ],
+      "render_sha256_120dpi_grayscale": "14514ab15d5230e4ee5d81bace781142388e523d988f03d6cfb341cdb8236657"
+    },
+    {
+      "number": 2,
+      "song": "She'll Be Comin' Round the Mountain",
+      "size_points": [
+        612.0,
+        792.0
+      ],
+      "render_sha256_120dpi_grayscale": "2befea2cd6b63640386c1351cabb381d72479cbdaa413c21574bb677051aed5b"
+    },
+    {
+      "number": 3,
+      "song": "B-I-N-G-O",
+      "size_points": [
+        612.0,
+        792.0
+      ],
+      "render_sha256_120dpi_grayscale": "bb9696c5cdf330c1b970305b2391afb331a9c1485a5757885ddbaa12a497caa0"
+    },
+    {
+      "number": 4,
+      "song": "John Jacob Jingleheimer Schmidt",
+      "size_points": [
+        612.0,
+        792.0
+      ],
+      "render_sha256_120dpi_grayscale": "06fae859d18f92f14319667a5a94ac5d80cc95f15e37c9e111bf90dbb6832bc2"
+    }
+  ],
+  "source_page_sha256": {
+    "bingo-stanford-lyrics.txt": "d2e65fe4b2a7e1fdd0f713d5dbf6c6f0d8c73c0018ccf1228e1389b61cd27058",
+    "golden-book-1915-title.txt": "8f874deb142209c628b6291efb47fb7debb879176b8aa582e9a99ed5b2bf6a1a",
+    "john-jacob-traditional-lyrics.txt": "21fd7a6e556aae5fc9c5405b723d453fef93481cf23aa5df2f6a1f71ae2d489b",
+    "mountain-1927-p372.png": "bce2007be7862e183d9b1e5a020c3698137f6f8e5e29c5f34b69340cec0efce6",
+    "mountain-1927-p373.png": "1721e753114507357021ffe5faaa7132ffe9acc4f9a5de337cd875983f250003",
+    "my-bonnie-1915-p43.jpeg": "244286d66ee5e8aabf2676c744ddb9ca48f6684bf1b112141987bbc59a9aea31",
+    "row-your-boat-1881-p69.png": "772f665ca9d6222a75b9a13f8f0e2beb22b7a6d9b2a967b1eace60fdd1da16de",
+    "scotlands-burning-1915-p55.jpeg": "442964d43a1f685102f8d80fd9c0b3c610de3f396c32ca7bf31cc26799944ea1",
+    "songbag-1927-copyright.png": "227d77aa112a202ee6130d456dfecbaae6e8193cd8a50e657db28b3329dc6f27"
+  },
+  "retained_html_unchanged_from_previous_commit": [
+    "row-row-row-your-boat",
+    "shell-be-comin-round-the-mountain"
+  ],
+  "protected_files_unchanged": 11
+}
