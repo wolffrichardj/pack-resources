@@ -1,32 +1,30 @@
 # Classic skits: internal quality review
 
-Seven traditional skits adapted into portable, one-page den handouts. Two completed editorial loops use scoutmaster, audience-member, and teaching-den-leader perspectives. These are internal simulated reviews and spoken-line pacing assessments, not a live rehearsal or feedback from actual Scouts or leaders.
+Current packet: Invisible Bench, Clean Socks, and The Viper Is Coming. The four other October 3 additions were retired after author feedback. The earlier review approved adaptations that weakened these jokes; this review supersedes it.
 
-## Loop 1: content, delivery, and rehearsal
+Two internal editorial loops were completed on October 10, 2026, using scoutmaster, audience-member, and teaching-den-leader perspectives. These are simulated editorial assessments, not a live rehearsal or actual stakeholder feedback.
+
+## Loop 1: restore the joke and specify the staging
 
 | Skit | Scoutmaster perspective | Audience perspective | Den leader perspective |
 | --- | --- | --- | --- |
-| Invisible Bench | Use shallow bends or upright mime; replace falling with a surprised reaction. | Repeated entrances lead directly to the moved-bench reveal. | Select final Scout in advance; teach the reaction first. |
-| Ice Fishing | All tools and drilling are pretend; movements are small. | Three attempts establish the pattern; pause after the rink-manager reveal. | Explicitly assign Scout 4 as offstage voice; explain ice rink privately. |
-| Is It Time Yet? | Loose ankles and arms-only option avoid awkward balancing. | Limit to three rounds and short waits. | Finding: final switch needed a shared cue. Added the first Scout's nod directly to the script. |
-| Amazing Bruce | Bruce is imaginary; no actual person is tossed. | Coordinated gaze sells the invisible performer; later return supplies the payoff. | Finding: callback could be missed. Added the agreed program cue directly to the script. |
-| Can't Work in the Dark | Friendly supervisor and pretend tools suit Cub Scouts. | Whole crew stopping together sets up the final line. | Explicit cue is the lightbulb lowering a hand and leaving. |
-| Clean Socks | Clean props only; note distinguishes joke from good hygiene. | Stop the month list after March to preserve pace. | Five roles; tokens or mime eliminate twelve-pair prop preparation. |
-| Viper Is Coming | Ordinary voice and playful suspense avoid nationality imitation or frightening staging. | Finding: final sentence diluted the pun. Shortened to "Hello! I'm Viper, your window wiper!" | VIPER sign and cloth establish the visitor; practice Viper/wiper clearly. |
+| Viper | Restore the cleaner's W-to-V pronunciation; no sign or named character called Viper. | Nervous warnings contrast with a cheerful ordinary cleaner. "Vipe your vindows" reveals the misunderstanding. | Four messengers enter in number order and stay in a huddle; the fifth Scout enters last with a cloth. Only the cleaner changes pronunciation. |
+| Clean Socks | Restore the whole-week explanation for two pairs, with the helper's increasing approval of more frequent changes. | Seven pairs sets up a daily pattern; the helper assumes twelve is even cleaner. The month list reverses that expectation. | Explicit queue, step-forward, handoff, and step-aside instructions. Five roles; mime avoids needing twelve actual pairs. |
+| Invisible Bench | Restore the apparent loss of support with a rehearsed controlled sit-down, rather than standing up. | The moved-bench line cues a downward reaction; that physical punchline completes the joke. | Scout 1 begins seated in mime; each sitter repeats the printed exchange. Reserve the mover until last; the mover never sits or falls. |
 
-Revisions above were applied before final rendering.
+Revisions were applied to the HTML handouts. Clean Socks initially exceeded one page after restoring the teaching instructions; wording was tightened without shrinking type or removing the progression.
 
-## Loop 2: revised performance and final page review
+## Loop 2: revised script walkthrough and final rendered pages
 
-- **Scoutmaster:** Rechecked all seven revised scripts for suitable humor, practical staging, and safe pretend action. Cast ranges match specified lead/support roles. Socks retains a brief private hygiene teaching note. Bruce's callback is coordinated, not improvised.
-- **Audience member:** Walked through each revised spoken exchange and action sequence in performance order. Every skit has a distinct payoff. Repetition is bounded, long pauses are avoided, and reaction beats follow the reveals. Viper uses a sign-supported name pun; its effectiveness depends on clear delivery. No live audience response is claimed.
-- **Den leader:** Rechecked each handout independently for role allocation, props, starting position, repeated lines, final cue, and exit. The youngest-den choice has very little memorization. Non-speaking roles are deliberate. No separate manual is needed.
-- **Visual review:** Inspected PNG renders of all seven final PDF pages individually. Titles, metadata, script columns, leader notes, and source footers fit without clipping, overlap, or overflow. All pages retain 32px titles, 18px section headings, and 14px dialogue/leader text, with the same compact spacing and margins.
-- **Mechanical verification:** Exactly seven pages, each 612 x 792 points (US Letter portrait), one skit per page, with leader note and source footer present. Longest layouts use about 965 of 1056 CSS pixels. Repository `npm test` passes all ten existing page checks.
+- **Scoutmaster:** Rechecked suitable staging and tone. Bench retains the classic apparent fall as a controlled sit-down, with an alternative downward mime where ground seating is unsuitable. Viper's only pronunciation direction is W-to-V. Socks' monthly-change misunderstanding remains a joke, with a private hygiene reminder.
+- **Audience:** Walked through each revised spoken exchange and action in order. Viper reveals the cleaner through pronunciation and wiping action, not a sign. Socks builds the helper's expectations before the months. Bench reacts downward at the final word of the reveal. Reaction pauses follow the punchlines; no explanatory spoken line is added afterward.
+- **Den leader:** Checked minimum and maximum cast allocation. Viper has five assigned roles, and messengers remain visible for their final reaction. Socks has a shared movement pattern and explicit turn cues. Bench's 4-8 Scouts include one starter, 2-6 joining sitters, and one standing mover. Entrances, repeated dialogue, final cues, and exits are specified.
+- **Visual review:** Inspected all three PDF page renders individually. Metadata, script columns, leader notes, and references remain readable and complete. Same typography as before: 32px titles, 18px section headings, 14px script and leader text. No clipping, overlap, or overflow.
+- **Mechanical verification:** Three US Letter portrait pages (612 x 792 points), one skit each. Page layouts occupy approximately 1013, 1024, and 905 of 1056 CSS pixels. Builder verifies page counts and leader-note/reference presence. `npm test` passes all ten existing repository page checks.
 
 ## Sources and build
 
-- [Scouting America: Invisible Bench](https://www.scouting.org/cub-scout-presentations/invisible-bench/)
-- [Scout Life: 10 Funny Campfire Skits](https://scoutlife.org/outdoors/182685/funny-campfire-skits/)
+- [Scout Life: 10 Funny Campfire Skits](https://scoutlife.org/outdoors/182685/funny-campfire-skits/) - Viper pronunciation and Clean Socks progression.
+- [BSA: Roundtable Planning Guide, 2015-2016](https://filestore.scouting.org/filestore/boyscouts/pdf/510-714_WEB.pdf) - Invisible Bench's moved-bench reveal and apparent fall. The handout uses a simplified cast and controlled movement.
 
-HTML handouts are the editable sources. `scripts/build-classic-skits.js` renders them with Playwright and merges them using Python/pypdf. The review is complete before submitting the finalized PDF to print.
+HTML handouts remain the editable sources. `scripts/build-classic-skits.js` renders them with Playwright and merges with Python/pypdf. This revision was reviewed and rebuilt; no replacement print job was requested or submitted.

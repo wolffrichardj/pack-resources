@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
-const skits = ['invisible-bench', 'ice-fishing', 'is-it-time-yet', 'amazing-bruce', 'cant-work-in-the-dark', 'clean-socks', 'viper-is-coming'];
+const skits = ['invisible-bench', 'clean-socks', 'viper-is-coming'];
 (async () => {
   fs.mkdirSync('tmp/pdfs', { recursive: true });
   const browser = await chromium.launch({ headless: true });
@@ -28,15 +28,15 @@ for name in names:
     reader = PdfReader('tmp/pdfs/' + name + '.pdf')
     assert len(reader.pages) == 1, name + ': expected one page'
     writer.append(reader)
-writer.add_metadata({'/Title': 'Classic Cub Scout Skits - Seven One-Page Handouts'})
+writer.add_metadata({'/Title': 'Classic Cub Scout Skits - Three One-Page Handouts'})
 Path('output/pdf').mkdir(parents=True, exist_ok=True)
 writer.write('output/pdf/classic-cub-scout-skits.pdf')
 reader = PdfReader('output/pdf/classic-cub-scout-skits.pdf')
-assert len(reader.pages) == 7
+assert len(reader.pages) == len(names)
 for page in reader.pages:
     assert float(page.mediabox.width) == 612 and float(page.mediabox.height) == 792
     assert 'LEADER NOTE' in page.extract_text() and 'Reference:' in page.extract_text()
-print('Verified seven complete Letter pages.')
+print('Verified three complete Letter pages.')
 `], { stdio: 'inherit' });
   if (merge.status !== 0) throw new Error('PDF merge failed; supply a Python executable with pypdf installed.');
 })().catch(error => { console.error(error); process.exit(1); });
