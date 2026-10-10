@@ -9,7 +9,7 @@ Four familiar songs, each preserving one identified version of public-domain lyr
 | 3 | [B-I-N-G-O](bingo_one-pager.html) | Full sung pass and full one-clap pass; patterns for passes 3-6 |
 | 4 | [John Jacob Jingleheimer Schmidt](john-jacob-jingleheimer-schmidt_one-pager.html) | Full normal and quieter passes; bold Fa-la ending stays loud |
 
-[Download the four-page packet](../output/pdf/classic-campfire-songs.pdf). Print at actual size on Letter paper. No physical print job is part of this collection's creation.
+[Download the four-page packet](../output/pdf/classic-campfire-songs.pdf). Print at actual size on Letter paper.
 
 The 1927 mountain song combines meeting her, the red rooster, and chicken and dumplin' in its third verse. It preserves that source version. **My Bonnie** and **Scotland's Burning** were removed at Richard's request; their research evidence remains separate from the active sheets.
 

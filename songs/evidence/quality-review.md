@@ -1,8 +1,8 @@
-# Classic song sheets: two internal review loops
+# Classic song sheets: quality review record
 
-**Current revision:** four pages: Row, Mountain, B-I-N-G-O, and John Jacob. Earlier reviews below document prior layouts. The final worked-repeat review records the current packet, including two complete example passes on B-I-N-G-O and John Jacob.
+**Current revision:** four pages: Row, Mountain, B-I-N-G-O, and John Jacob. Earlier reviews below document prior layouts. The worked-repeat review and final pre-print round record the current packet, including two complete example passes on B-I-N-G-O and John Jacob.
 
-October 10, 2026. These are internal editorial reviews from three practical perspectives. No actual Scout leader, den leader, child, or singing audience reviewed or rehearsed the packet. No physical print job was submitted.
+October 10, 2026. These are internal editorial reviews from three practical perspectives. No actual Scout leader, den leader, child, or singing audience reviewed or rehearsed the packet. The initial creation reviews preceded physical printing.
 
 ## Loop 1: initial sheets and first PDF render
 
@@ -86,3 +86,16 @@ Rechecked every final page rendered in grayscale at 120dpi. The builder verified
 Compared the expanded examples with the previous source record: B-I-N-G-O's new pass changes only the three B spelling positions to claps; John Jacob repeats the exact six source lines twice. Row and Mountain JSON records and HTML files are unchanged. SHA-256 checks confirmed all 11 protected files unchanged. `npm test` and `git diff --check` passed. The validation manifest now records the updated PDF and four final grayscale render digests.
 
 Both loops are internal editorial checks, without a live group rehearsal. No physical print job was submitted.
+
+
+## Final pre-print round
+
+October 10, 2026. Reviewed the exact committed four-page PDF against its recorded SHA-256, then inspected every page in a fresh 150dpi grayscale render. No content or layout changes were needed.
+
+| Perspective | Final finding | Result |
+| --- | --- | --- |
+| Scout leader | Retained source versions, complete lyrics, full first two repeat examples, and continuation mechanisms are consistent. Row's optional round entry follows the source's phrase interval. Mountain's three stanzas remain complete and in order. | Pass. No added verse, altered repeat rule, or remaining editorial correction. |
+| Audience | All four grayscale pages are legible. Titles, verse blocks, chart rows, bold endings, and margins remain clear; no clipped lines, overlaps, unwanted page breaks, or missing glyphs. | Pass. One song per Letter page. |
+| Den leader | B-I-N-G-O demonstrates all-letter then one-clap passes and specifies three spelling repetitions in each later pass. John Jacob demonstrates normal and quieter voices while keeping the ending loud. Row's brief cue is sufficient. | Pass. Examples and continuation cues are ready for teaching. |
+
+Read-only PDF preflight verified the recorded artifact digest, four 612 × 792pt pages, complete ordered lyric blocks and section labels, all directions and remaining clap patterns, embedded fonts, no link annotations, and every printed character within 0.5-inch margins. `npm test` and the full branch whitespace check passed. This remains an internal document review; no live group rehearsal is claimed.
