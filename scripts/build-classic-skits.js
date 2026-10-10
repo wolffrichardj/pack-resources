@@ -35,7 +35,9 @@ reader = PdfReader('output/pdf/classic-cub-scout-skits.pdf')
 assert len(reader.pages) == len(names)
 for page in reader.pages:
     assert float(page.mediabox.width) == 612 and float(page.mediabox.height) == 792
-    assert 'LEADER NOTE' in page.extract_text() and 'Reference:' in page.extract_text()
+    text = page.extract_text()
+    assert 'LEADER NOTE' in text
+    assert 'Reference:' not in text and 'Printable handout' not in text
 print('Verified three complete Letter pages.')
 `], { stdio: 'inherit' });
   if (merge.status !== 0) throw new Error('PDF merge failed; supply a Python executable with pypdf installed.');
