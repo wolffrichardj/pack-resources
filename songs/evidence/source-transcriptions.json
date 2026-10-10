@@ -66,5 +66,56 @@
     ],
     "flow": "Sing Verses 1-3 in order. 'When she comes' is part of each verse; there is no separate chorus.",
     "teaching": "Use the familiar mountain-song tune and keep a steady beat. In Verse 3, the words change halfway through: meet her, red rooster, then chicken and dumplin'."
+  },
+  {
+    "slug": "bingo",
+    "title": "B-I-N-G-O",
+    "version": "Traditional singing game · Six passes",
+    "source": "Stanford DREME, Math Song Guide Based on BINGO (2022), Song Lyrics panel; who selected from printed optional (who)",
+    "sections": [
+      {
+        "label": "Verse · Pass 1",
+        "lines": [
+          "There was a farmer who had a dog,",
+          "And Bingo was his name-o.",
+          "B-I-N-G-O,",
+          "B-I-N-G-O,",
+          "B-I-N-G-O",
+          "And Bingo was his name-o."
+        ]
+      }
+    ],
+    "flow": "Sing the whole verse six times, using the spelling patterns below in order. Each clap takes the place of one letter.",
+    "teaching": null,
+    "repeatCue": "Sing each pattern three times, then finish with \"And Bingo was his name-o.\" Keep the first two lines the same on every pass.",
+    "repeatPatterns": [
+      "B-I-N-G-O",
+      "(clap)-I-N-G-O",
+      "(clap)-(clap)-N-G-O",
+      "(clap)-(clap)-(clap)-G-O",
+      "(clap)-(clap)-(clap)-(clap)-O",
+      "(clap)-(clap)-(clap)-(clap)-(clap)"
+    ]
+  },
+  {
+    "slug": "john-jacob-jingleheimer-schmidt",
+    "title": "John Jacob Jingleheimer Schmidt",
+    "version": "Traditional camp song · Quiet-to-loud game",
+    "source": "LowGUkulele.com, John Jacob Jingleheimer Schmidt - Low G Ukulele, Level 1 (May 5, 2025), traditional lyric underlay only",
+    "sections": [
+      {
+        "label": "Verse",
+        "lines": [
+          "John Jacob Jingleheimer Schmidt.",
+          "His name is my name too!",
+          "Whenever we go out,",
+          "the people always shout.",
+          "They say John Jacob Jingleheimer Schmidt,",
+          "Fa-la-la-la-la-la-la!"
+        ]
+      }
+    ],
+    "flow": "Repeat the verse, getting quieter each time. Always sing the final \"Fa-la-la-la-la-la-la!\" line loudly.",
+    "teaching": null
   }
 ]

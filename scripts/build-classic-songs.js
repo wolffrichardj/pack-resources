@@ -21,6 +21,11 @@ const songs = require('../songs/evidence/source-transcriptions.json');
       assert.equal(await page.locator('h1').textContent(), song.title);
       assert.deepEqual(await page.locator('.lyrics').evaluateAll(nodes => nodes.map(node => node.innerText.split('\n'))), song.sections.map(section => section.lines), `${song.slug}: source transcription mismatch`);
       assert.equal(await page.locator('.flow').textContent(), song.flow);
+      if (song.repeatPatterns) {
+        assert.equal(await page.locator('.repeat-cue').textContent(), song.repeatCue);
+        assert.deepEqual(await page.locator('.spelling').allTextContents(), song.repeatPatterns, `${song.slug}: repeat pattern mismatch`);
+        assert.deepEqual(await page.locator('.repeat-table tbody td:first-child').allTextContents(), song.repeatPatterns.map((_, i) => String(i + 1)), `${song.slug}: repeat order mismatch`);
+      }
       if (song.teaching) assert.equal(await page.locator('.note p').textContent(), song.teaching);
       else assert.equal(await page.locator('.note').count(), 0);
       assert.equal(await page.locator('footer, a, script, link, img').count(), 0, `${song.slug}: unexpected assets or footer`);
@@ -58,6 +63,13 @@ for song in songs:
         found = text.find(fragment, position)
         assert found >= 0, song['slug'] + ': missing or reordered PDF lyrics'
         position = found + len(fragment)
+    if song.get('repeatPatterns'):
+        assert normalize(song['repeatCue']) in text, song['slug'] + ': missing repeat directions'
+        for number, pattern in enumerate(song['repeatPatterns'], 1):
+            fragment = normalize(str(number) + ' ' + pattern)
+            found = text.find(fragment, position)
+            assert found >= 0, song['slug'] + ': missing or reordered repeat pattern'
+            position = found + len(fragment)
     writer.append(reader)
 writer.add_metadata({'/Title': 'Classic Campfire Songs - One-Page Song Sheets'})
 writer.write(output)

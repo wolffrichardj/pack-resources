@@ -1,6 +1,6 @@
 # Classic song sheets: two internal review loops
 
-**Current revision:** two pages, Row and Mountain. The four-song review below documents the initial collection; the revision check at the end documents Richard's selection changes.
+**Current revision:** four pages: Row, Mountain, B-I-N-G-O, and John Jacob. The initial review below is historical; the selection revision and two new review loops at the end document the current packet.
 
 October 10, 2026. These are internal editorial reviews from three practical perspectives. No actual Scout leader, den leader, child, or singing audience reviewed or rehearsed the packet. No physical print job was submitted.
 
@@ -24,7 +24,7 @@ Fidelity check: manually compared the retained original p. 69, p. 43, p. 55, and
 
 The second loop found no further changes necessary. This is ready for Richard's printing or rehearsal; it is not evidence of a live group sing-through.
 
-## Verification
+## Initial collection verification
 
 - `node scripts/build-classic-songs.js <bundled Python>` passed: exact HTML lyric blocks versus the scan-checked JSON record; directions; no external assets or scripts; print bounds; 375px screen layout; no browser errors; complete PDF lyric blocks; one page per song; all four pages exactly **612 × 792pt**, US Letter portrait.
 - Final print-layout heights: Row 522px, Bonnie 1022px, Scotland 522px, Mountain 822px, each within 1056px. All use 18px (13.5pt) lyrics, 32px titles, and the retained skits' margins/type/box vocabulary.
@@ -35,4 +35,33 @@ The second loop found no further changes necessary. This is ready for Richard's 
 
 Richard requested removing My Bonnie and expressed that Scotland's Burning did not appeal; both sheets and PDF pages were removed. Mountain remains unchanged. Row keeps its exact lyrics, with one short direction covering unison or the optional two-group round entry. The longer leader-note box was removed. No additional performance explanation is needed for the familiar song.
 
-Rebuilt the two-page packet, checked all retained lyrics, directions, print bounds, narrow-screen layout, page counts and Letter dimensions, then rendered and visually inspected both pages. The validation manifest now identifies this two-page PDF. The retained skits and unrelated local work remain unchanged.
+Rebuilt the two-page packet, checked all retained lyrics, directions, print bounds, narrow-screen layout, page counts and Letter dimensions, then rendered and visually inspected both pages. The validation manifest identified that two-page PDF at this stage; it now identifies the final four-page selection below. The retained skits and unrelated local work remain unchanged.
+
+
+## Selected additions: loop 1
+
+Reviewed the new sheets, manually checked the original Stanford PDF and John Jacob score render, and inspected every page of the first four-page export.
+
+| Perspective | Finding | Action |
+| --- | --- | --- |
+| Scout leader | Stanford explicitly identifies its printed B-I-N-G-O lyrics as public domain. The John Jacob publisher identifies its underlying freely arranged songs as public domain, with no exception for this traditional song. The modern arrangement has a separate license. These are different evidence bases from Row and Mountain's historical scans. | Documented those specific publisher statements without inventing an early publication date. Transcribed only traditional lyrics. Preserved John Jacob's They say and Fa-la variant. |
+| Singing audience | The six-pass clap table is legible and complete. All four pages fit, and the final five-clap row stays on one line. The printed full B-I-N-G-O verse could be taken as an extra pass before starting the chart. | Changed its heading to **Verse · Pass 1**, making clear the chart's first row describes the already printed verse. Kept 18px lyrics and spelling patterns. |
+| Den leader teaching | Each B-I-N-G-O pattern must be sung three times; the first two lines and final name-o line belong to every pass. John Jacob gets quieter on repeats but returns to loud singing for the ending. | Kept those exact mechanics explicit in brief directions. No fixed John Jacob pass count, extra action, or new verse was added. |
+
+## Selected additions: loop 2
+
+After the B-I-N-G-O heading change, rebuilt the PDF and independently rechecked the final directions and lyric blocks against the source publications. Rendered and visually inspected all four final pages at 120dpi.
+
+| Perspective | Final check | Result |
+| --- | --- | --- |
+| Scout leader | Every lyric word and internal repetition matches the identified version, subject only to the recorded optional who selection, O typo correction, line breaks, and joined score syllables. No modern score arrangement or guide artwork was copied. Source/status evidence remains separate from the handouts. | Pass. Row and Mountain HTML are byte-for-byte unchanged from the previous commit. My Bonnie and Scotland remain excluded. |
+| Singing audience | Inspected each final page for titles, margins, apostrophes, line spacing, boxes, full verse visibility, and chart order. B-I-N-G-O's Pass 1 label is clear. All six spelling rows fit without wrapping or clipping on Letter paper. John Jacob's title and long They say line fit. | Pass. Four pages, one song per page; no overlap, clipping, unwanted blank page, printed links, footer rule, or browser header/footer. |
+| Den leader teaching | Walked through B-I-N-G-O's whole verse for passes 1-6: unchanged farmer opening, each row three times, closing name-o line; the last pass replaces all five letters with claps. Walked through John Jacob's quieter repetitions and always-loud Fa-la ending. Row retains its one short optional entry cue. | Pass. Complete performance flow with source-consistent repeat conventions. |
+
+### Current packet validation
+
+- Builder passed exact HTML lyric/direction checks, B-I-N-G-O chart contents and numbered order, 375px screen layout, print bounds, PDF lyrics and chart order, one page per song, and all four pages at **612 × 792pt**.
+- Final print heights: Row 408px, Mountain 822px, B-I-N-G-O 810px, John Jacob 473px, within 1056px. Lyrics and printed chart patterns remain 18px (13.5pt).
+- `pdfinfo` confirms four unencrypted Letter pages without forms or JavaScript. All final 120dpi page renders were individually inspected. `validation.json` records the final PDF digest, all four render digests, and source-evidence digests.
+- `npm test` passed four pack-operations pages and six ceremony pages. `git diff --check` passed. SHA-256 comparison confirmed all 11 protected files unchanged, including root README, retained skit HTML/review/PDF, and unrelated regatta HTML/PDF files.
+- Both review loops are internal editorial checks, not real leader reviews or a live rehearsal. No physical print job was sent.
