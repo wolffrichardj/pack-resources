@@ -54,9 +54,6 @@ Ceremony materials and supporting assets.
 
 Standalone skit one-pagers for den or pack use.
 
-- `skits/bright-idea-skit_one-pager.html`
-- `skits/lost-quarter-skit_one-pager.html`
-
 - `skits/invisible-bench-skit_one-pager.html`
 - `skits/clean-socks-skit_one-pager.html`
 - `skits/viper-is-coming-skit_one-pager.html`
