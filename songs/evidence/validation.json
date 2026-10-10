@@ -1,0 +1,48 @@
+{
+  "checked_on": "2026-10-10",
+  "pdf": "output/pdf/classic-campfire-songs.pdf",
+  "pdf_sha256": "39defd338855e369ad1ba5630a9ffed6d9e0be0a0f1326148d2830f541e60bd2",
+  "pages": [
+    {
+      "number": 1,
+      "size_points": [
+        612.0,
+        792.0
+      ],
+      "render_sha256_130dpi": "586756902876b6bf83854cafdbcfef1e621297feff267b7826f6b7e0f478f3ba"
+    },
+    {
+      "number": 2,
+      "size_points": [
+        612.0,
+        792.0
+      ],
+      "render_sha256_130dpi": "c3a3bf41a01895b4733e79734b8cc7a3dc0f08cf07003ff6499c21dc1e82876a"
+    },
+    {
+      "number": 3,
+      "size_points": [
+        612.0,
+        792.0
+      ],
+      "render_sha256_130dpi": "339558a25e8151ca21346eb900ab60fff6cec4e67833c76c7b31dfb16dc5da7f"
+    },
+    {
+      "number": 4,
+      "size_points": [
+        612.0,
+        792.0
+      ],
+      "render_sha256_130dpi": "1e137e1570f3261991941c5fe74150abaf6f2622c1b163a33e914e8cd72ba2e8"
+    }
+  ],
+  "source_page_sha256": {
+    "golden-book-1915-title.txt": "8f874deb142209c628b6291efb47fb7debb879176b8aa582e9a99ed5b2bf6a1a",
+    "mountain-1927-p372.png": "bce2007be7862e183d9b1e5a020c3698137f6f8e5e29c5f34b69340cec0efce6",
+    "mountain-1927-p373.png": "1721e753114507357021ffe5faaa7132ffe9acc4f9a5de337cd875983f250003",
+    "my-bonnie-1915-p43.jpeg": "244286d66ee5e8aabf2676c744ddb9ca48f6684bf1b112141987bbc59a9aea31",
+    "row-your-boat-1881-p69.png": "772f665ca9d6222a75b9a13f8f0e2beb22b7a6d9b2a967b1eace60fdd1da16de",
+    "scotlands-burning-1915-p55.jpeg": "442964d43a1f685102f8d80fd9c0b3c610de3f396c32ca7bf31cc26799944ea1",
+    "songbag-1927-copyright.png": "227d77aa112a202ee6130d456dfecbaae6e8193cd8a50e657db28b3329dc6f27"
+  }
+}

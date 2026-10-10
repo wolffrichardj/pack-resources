@@ -1,0 +1,144 @@
+[
+  {
+    "slug": "row-row-row-your-boat",
+    "title": "Row, Row, Row Your Boat",
+    "version": "1881 round · Four phrases",
+    "source": "Franklin Square Song Collection, No. 1 (1881), p. 69, Row Your Boat",
+    "sections": [
+      {
+        "label": "Lyrics",
+        "lines": [
+          "Row, row, row your boat,",
+          "Gently down the stream;",
+          "Merrily, merrily, merrily, merrily;",
+          "Life is but a dream."
+        ]
+      }
+    ],
+    "flow": "Sing all four lines together first. Then sing as a round.",
+    "teaching": "Divide into two to four groups. Group 1 begins. Group 2 starts at 'Row' when Group 1 reaches 'Gently'; Group 3 when Group 1 reaches 'Merrily'; Group 4 when Group 1 reaches 'Life.' Repeat the four lines. On the leader's last-pass cue, each group finishes its own four lines."
+  },
+  {
+    "slug": "my-bonnie",
+    "title": "My Bonnie",
+    "version": "1915 songbook version · Four verses and chorus",
+    "source": "The Golden Book of Favorite Songs, tenth edition (1915), p. 43",
+    "sections": [
+      {
+        "label": "Verse 1",
+        "lines": [
+          "My Bonnie is over the ocean,",
+          "My Bonnie is over the sea,",
+          "My Bonnie is over the ocean,",
+          "O bring back my Bonnie to me."
+        ]
+      },
+      {
+        "label": "Chorus",
+        "lines": [
+          "Bring back, bring back,",
+          "Bring back my Bonnie to me, to me;",
+          "Bring back, bring back,",
+          "O bring back my Bonnie to me."
+        ]
+      },
+      {
+        "label": "Verse 2",
+        "lines": [
+          "O blow, ye winds, over the ocean,",
+          "And blow, ye winds, over the sea,",
+          "O blow, ye winds, over the ocean,",
+          "And bring back my Bonnie to me."
+        ]
+      },
+      {
+        "label": "Verse 3",
+        "lines": [
+          "Last night as I lay on my pillow,",
+          "Last night as I lay on my bed,",
+          "Last night as I lay on my pillow,",
+          "I dreamed that my Bonnie was dead."
+        ]
+      },
+      {
+        "label": "Verse 4",
+        "lines": [
+          "The winds have blown over the ocean,",
+          "The winds have blown over the sea,",
+          "The winds have blown over the ocean,",
+          "And bro't back my Bonnie to me."
+        ]
+      }
+    ],
+    "flow": "Start with Verse 1. Sing the chorus after each verse, including Verse 4.",
+    "teaching": "Sing to the familiar My Bonnie tune. For the traditional B-word action, start seated; stand or sit each time you sing a word beginning with B. Practice slowly, especially 'bring back my Bonnie.'"
+  },
+  {
+    "slug": "scotlands-burning",
+    "title": "Scotland's Burning",
+    "version": "1915 round · Four phrases",
+    "source": "The Golden Book of Favorite Songs, tenth edition (1915), p. 55",
+    "sections": [
+      {
+        "label": "Lyrics",
+        "lines": [
+          "Scotland's burning, Scotland's burning,",
+          "Look out, look out!",
+          "Fire, fire, fire, fire!",
+          "Pour on water, Pour on water."
+        ]
+      }
+    ],
+    "flow": "Sing all four lines together first. Then sing as a round.",
+    "teaching": "Divide into two to four groups. Group 1 begins. Group 2 starts at 'Scotland's burning' when Group 1 reaches 'Look out'; Group 3 when Group 1 reaches 'Fire'; Group 4 when Group 1 reaches 'Pour on water.' Repeat the four lines. On the leader's last-pass cue, each group finishes its own four lines."
+  },
+  {
+    "slug": "shell-be-comin-round-the-mountain",
+    "title": "She'll Be Comin' Round the Mountain",
+    "version": "1927 songbook version · Three verses",
+    "source": "Carl Sandburg, The American Songbag (1927), pp. 372-373, song A",
+    "sections": [
+      {
+        "label": "Verse 1",
+        "lines": [
+          "She'll be comin' round the mountain,",
+          "When she comes.",
+          "She'll be comin' round the mountain,",
+          "When she comes.",
+          "She'll be comin' round the mountain,",
+          "She'll be comin' round the mountain,",
+          "She'll be comin' round the mountain,",
+          "When she comes."
+        ]
+      },
+      {
+        "label": "Verse 2",
+        "lines": [
+          "She'll be drivin' six white horses,",
+          "When she comes.",
+          "She'll be drivin' six white horses,",
+          "When she comes.",
+          "She'll be drivin' six white horses,",
+          "She'll be drivin' six white horses,",
+          "She'll be drivin' six white horses,",
+          "When she comes."
+        ]
+      },
+      {
+        "label": "Verse 3",
+        "lines": [
+          "Oh we'll all go to meet her,",
+          "When she comes.",
+          "Oh we'll all go to meet her,",
+          "When she comes.",
+          "We will kill the old red rooster,",
+          "We will kill the old red rooster,",
+          "And we'll all have chicken and dumplin',",
+          "When she comes."
+        ]
+      }
+    ],
+    "flow": "Sing Verses 1-3 in order. 'When she comes' is part of each verse; there is no separate chorus.",
+    "teaching": "Use the familiar mountain-song tune and keep a steady beat. In Verse 3, the words change halfway through: meet her, red rooster, then chicken and dumplin'."
+  }
+]
