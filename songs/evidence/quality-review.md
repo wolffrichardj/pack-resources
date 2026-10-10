@@ -1,5 +1,7 @@
 # Classic song sheets: two internal review loops
 
+**Current revision:** two pages, Row and Mountain. The four-song review below documents the initial collection; the revision check at the end documents Richard's selection changes.
+
 October 10, 2026. These are internal editorial reviews from three practical perspectives. No actual Scout leader, den leader, child, or singing audience reviewed or rehearsed the packet. No physical print job was submitted.
 
 ## Loop 1: initial sheets and first PDF render
@@ -28,3 +30,9 @@ The second loop found no further changes necessary. This is ready for Richard's 
 - Final print-layout heights: Row 522px, Bonnie 1022px, Scotland 522px, Mountain 822px, each within 1056px. All use 18px (13.5pt) lyrics, 32px titles, and the retained skits' margins/type/box vocabulary.
 - `pdfinfo`: four unencrypted Letter pages, no forms or JavaScript. Full-page PNGs generated with Poppler and individually inspected; previews remain temporary, outside the repository.
 - `npm test` passed all four pack-operations pages and six ceremony pages; `git diff --check` passed. SHA-256 comparisons confirmed all 11 protected files unchanged: root README, retained skit HTML/review/PDF, and unrelated regatta HTML/PDF files. Only the new songs, their evidence, the song PDF, and its builder are included in the feature commit.
+
+## Selection revision
+
+Richard requested removing My Bonnie and expressed that Scotland's Burning did not appeal; both sheets and PDF pages were removed. Mountain remains unchanged. Row keeps its exact lyrics, with one short direction covering unison or the optional two-group round entry. The longer leader-note box was removed. No additional performance explanation is needed for the familiar song.
+
+Rebuilt the two-page packet, checked all retained lyrics, directions, print bounds, narrow-screen layout, page counts and Letter dimensions, then rendered and visually inspected both pages. The validation manifest now identifies this two-page PDF. The retained skits and unrelated local work remain unchanged.

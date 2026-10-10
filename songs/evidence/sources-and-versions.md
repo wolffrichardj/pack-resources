@@ -8,7 +8,9 @@ The [U.S. Copyright Office's Circular 15A](https://www.copyright.gov/circs/circ1
 
 Only historical lyrics are transcribed. Modern source-site editorial prose, arrangements, audio, and later lyric variants are not reproduced. The retained scans and source transcriptions below provide the version-specific evidence; the repo's general software license does not alter the underlying songs' public-domain status.
 
-## Selected versions
+## Researched versions
+
+Current packet: **Row, Row, Row Your Boat** and **She'll Be Comin' Round the Mountain**. Richard removed My Bonnie and Scotland's Burning after reviewing the initial collection. Their source evidence below is retained as research history; they have no active HTML sheets or pages in the PDF. Row now uses only a brief optional two-group round entry cue.
 
 | Song | Exact lyric source | Completeness and performance |
 | --- | --- | --- |
@@ -44,6 +46,6 @@ Only historical lyrics are transcribed. Modern source-site editorial prose, arra
 
 ## Fidelity record
 
-[source-transcriptions.json](source-transcriptions.json) contains the manually scan-checked lyric text, exact block order, and separately authored flow/teaching directions. The builder compares each HTML lyric block against that record, then checks that the exported PDF contains each complete block in order. Automatic comparisons protect against later drift; the scan comparisons establish source fidelity. Neither check relies on invented continuation verses.
+[source-transcriptions.json](source-transcriptions.json) contains the active songs' manually scan-checked lyric text, exact block order, and separately authored flow/teaching directions. The builder compares each HTML lyric block against that record, then checks that the exported PDF contains each complete block in order. Automatic comparisons protect against later drift; the scan comparisons establish source fidelity. Neither check relies on invented continuation verses.
 
-The sheets' four-phrase rounds use the source's entry interval. The last-pass cue is an ordinary leader instruction for ending the round, not a new lyric or a mandated historical repeat count. No key or fixed tempo is imposed. The source scores retained here are available for leaders who need the melody.
+Row's optional two-group round uses the source's entry interval. Its directions are now limited to one short entry cue; the original longer ending explanation has been removed. No key or fixed tempo is imposed. The source scores retained here are available for leaders who need the melody.

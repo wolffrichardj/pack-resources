@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-10",
   "pdf": "output/pdf/classic-campfire-songs.pdf",
-  "pdf_sha256": "39defd338855e369ad1ba5630a9ffed6d9e0be0a0f1326148d2830f541e60bd2",
+  "pdf_sha256": "5d715a35e13d43c6636e1dd5ea08ff9d0cb19e63760a15bd53bcacd9c4736934",
   "pages": [
     {
       "number": 1,
@@ -9,7 +9,7 @@
         612.0,
         792.0
       ],
-      "render_sha256_130dpi": "586756902876b6bf83854cafdbcfef1e621297feff267b7826f6b7e0f478f3ba"
+      "render_sha256_120dpi": "9c7dd623403b1e5d8758080bea76a5d363ce661c2f87df72d6ddfcd721bd8489"
     },
     {
       "number": 2,
@@ -17,23 +17,7 @@
         612.0,
         792.0
       ],
-      "render_sha256_130dpi": "c3a3bf41a01895b4733e79734b8cc7a3dc0f08cf07003ff6499c21dc1e82876a"
-    },
-    {
-      "number": 3,
-      "size_points": [
-        612.0,
-        792.0
-      ],
-      "render_sha256_130dpi": "339558a25e8151ca21346eb900ab60fff6cec4e67833c76c7b31dfb16dc5da7f"
-    },
-    {
-      "number": 4,
-      "size_points": [
-        612.0,
-        792.0
-      ],
-      "render_sha256_130dpi": "1e137e1570f3261991941c5fe74150abaf6f2622c1b163a33e914e8cd72ba2e8"
+      "render_sha256_120dpi": "e41752a350ab9a39812bb9c8684fe9474e74d5d17522332a54eb3d7e0b29480e"
     }
   ],
   "source_page_sha256": {

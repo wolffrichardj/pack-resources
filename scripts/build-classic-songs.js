@@ -21,7 +21,8 @@ const songs = require('../songs/evidence/source-transcriptions.json');
       assert.equal(await page.locator('h1').textContent(), song.title);
       assert.deepEqual(await page.locator('.lyrics').evaluateAll(nodes => nodes.map(node => node.innerText.split('\n'))), song.sections.map(section => section.lines), `${song.slug}: source transcription mismatch`);
       assert.equal(await page.locator('.flow').textContent(), song.flow);
-      assert.equal(await page.locator('.note p').textContent(), song.teaching);
+      if (song.teaching) assert.equal(await page.locator('.note p').textContent(), song.teaching);
+      else assert.equal(await page.locator('.note').count(), 0);
       assert.equal(await page.locator('footer, a, script, link, img').count(), 0, `${song.slug}: unexpected assets or footer`);
       const layout = await page.locator('.page').evaluate(el => {
         const r = el.getBoundingClientRect();
@@ -58,7 +59,7 @@ for song in songs:
         assert found >= 0, song['slug'] + ': missing or reordered PDF lyrics'
         position = found + len(fragment)
     writer.append(reader)
-writer.add_metadata({'/Title': 'Classic Campfire Songs - Four One-Page Song Sheets'})
+writer.add_metadata({'/Title': 'Classic Campfire Songs - One-Page Song Sheets'})
 writer.write(output)
 reader = PdfReader(output)
 assert len(reader.pages) == len(songs)
@@ -67,7 +68,7 @@ for page in reader.pages:
     text = page.extract_text()
     assert 'Reference:' not in text and 'Printable handout' not in text
     assert not page.get('/Annots'), 'Unexpected printed links or annotations'
-print('Verified four complete US Letter pages with source-matched lyrics.')
+print('Verified ' + str(len(songs)) + ' complete US Letter pages with source-matched lyrics.')
 `, temp, output, path.resolve('songs/evidence/source-transcriptions.json')], { stdio: 'inherit' });
     assert.equal(merged.status, 0, 'PDF merge/verification failed; provide Python with pypdf installed.');
   } finally {
